@@ -133,9 +133,13 @@
 
      (hr)
 
-     [:section.grid.grid-cols-6.gap-4.grid-rows-2.lg:grid-rows-1
+     [:section;; .grid.grid-cols-6.gap-4.grid-rows-2.lg:grid-rows-1
       [:div.col-start-1.col-end-7.row-start-2.row-end-3.lg:row-start-1.lg:row-end-2.lg:col-start-1.lg:col-end-4
        [:h1.text-5xl {:style "font-family: Forum, serif;"} "Support the project"]
+
+       [:p.text-xl.mt-10
+        "If you enjoy babashka and it is helping you succeed, consider
+        sponsoring the development and maintainance of this project."]
        [:div.my-4.grid.grid-cols-2.w-80.gap-4
         [:button.border.border-gray-900.p-2
          [:a {:href "https://github.com/sponsors/borkdude"}
