@@ -105,6 +105,14 @@
        [:article
         [:h3.text-3xl {:style "font-family: Forum, serif;"}
          [:a {:href "https://github.com/babashka/pod-registry"}
+          "Pods"]]
+        [:p.text-xl.mt-4 "Babashka can shell out to other CLI programs like you
+        are used to in bash. It goes one step further and offers seamless
+        integration with other binaries using the pod protocol. Pods can be implemented in any language, including Clojure, Rust and Go."]]
+
+       [:article
+        [:h3.text-3xl {:style "font-family: Forum, serif;"}
+         [:a {:href "https://github.com/babashka/pod-registry"}
           "Active and growing community"]]
         [:p.text-xl.mt-4 "The "
          [:a {:href "https://app.slack.com/client/T03RZGPFR/CLX41ASCS"}
@@ -114,14 +122,6 @@
          [:a {:href "https://github.com/babashka/babashka/discussions"} " Github
          discussions"] " can be used to reach out for any topic if you are more
          into slower moving communication."]]
-
-       [:article
-        [:h3.text-3xl {:style "font-family: Forum, serif;"}
-         [:a {:href "https://github.com/babashka/pod-registry"}
-          "Pods"]]
-        [:p.text-xl.mt-4 "Babashka can shell out to other CLI programs like you
-        are used to in bash. It goes one step further and offers seamless
-        integration with other binaries using the pod protocol. Pods can be implemented in any language, including Clojure, Rust and Go."]]
 
        ]]
 
