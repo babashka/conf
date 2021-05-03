@@ -109,20 +109,27 @@
         [:p.text-xl.mt-4 "Babashka can shell out to other CLI programs like you
         are used to in bash. It goes one step further and offers seamless
         integration with other binaries using the pod protocol. Pods can be implemented in any language, including Clojure, Rust and Go."]]
-
-       [:article
-        [:h3.text-3xl {:style "font-family: Forum, serif;"}
-         [:a {:href "https://github.com/babashka/pod-registry"}
-          "Active and growing community"]]
-        [:p.text-xl.mt-4 "The "
-         [:a {:href "https://app.slack.com/client/T03RZGPFR/CLX41ASCS"}
-          "babashka channel on Clojurians Slack" ]
-         " has quickly summoned more than 500 members. We are sharing ideas, and helping each other out with questions and issues."
-         [:a {:href "https://github.com/babashka/babashka/discussions"} " Github
-         discussions"] " can be used to reach out for any topic if you are more
-         into slower moving communication."]]
-
        ]]
+
+     (hr)
+
+     [:section
+      [:div.col-start-1.col-end-7.row-start-2.row-end-3.lg:row-start-1.lg:row-end-2.lg:col-start-1.lg:col-end-4
+       [:h1.text-5xl {:style "font-family: Forum, serif;"} "Community"]
+       [:p.text-xl.mt-10 "The "
+        [:a {:href "https://app.slack.com/client/T03RZGPFR/CLX41ASCS"}
+         "babashka channel on Clojurians Slack" ]
+        " has quickly summoned more than 500 members. We are sharing ideas, and helping each other out with questions and issues."
+        [:a {:href "https://github.com/babashka/babashka/discussions"} " Github
+         discussions"] " can be used to reach out for any topic if you are more
+         into slower moving communication."]
+       [:div.my-4.grid.grid-cols-2.w-80.gap-4
+        [:button.border.border-gray-900.p-2
+         [:a {:href "https://app.slack.com/client/T03RZGPFR/CLX41ASCS"}
+          "Clojurians Slack"]]
+        [:button.border.border-gray-900.p-2
+         [:a {:href "https://github.com/babashka/babashka/discussions"}
+          "Github Discussions"]]]]]
 
      (hr)
 
