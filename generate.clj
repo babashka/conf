@@ -117,8 +117,7 @@
         [:p.text-xl.mt-4 "The "
          [:a {:href "https://app.slack.com/client/T03RZGPFR/CLX41ASCS"}
           "babashka channel on Clojurians Slack" ]
-         " has more than
-          500 members helping each other out with questions and issues."
+         " has quickly summoned more than 500 members. We are sharing ideas, and helping each other out with questions and issues."
          [:a {:href "https://github.com/babashka/babashka/discussions"} " Github
          discussions"] " can be used to reach out for any topic if you are more
          into slower moving communication."]]
