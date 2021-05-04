@@ -1,9 +1,5 @@
 # Babashka's website
 
-Clone and use any file watcher to rerun the generate file on change.
+Run `bb generate.clj` to re-generate the site. Open `index.html` in your browser to view the site.
 
-Example:
-
-```sh
-nodemon --exec "./generate.clj" ./generate.clj
-```
+To watch for changes, run `bb watch`
