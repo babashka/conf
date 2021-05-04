@@ -41,10 +41,10 @@
               :width "200px"}]]
 
       [:nav.flex.flex-row.flex-nowrap.mb-5.lg:mb-0.mx-auto
-       [:a.my-auto.mx-10.hover:underline {:href "https://github.com/babashka/babashka#installation"} "Install"]
-       [:a.my-auto.mx-10.hover:underline {:href "http://book.babashka.org"} "Docs"]
-       [:a.my-auto.mx-10.hover:underline {:href "https://github.com/babashka/babashka/blob/master/doc/news.md"} "News"]
-       [:a.my-auto.mx-10.hover:underline {:href "https://github.com/babashka/babashka/blob/master/doc/dev.md"}
+       [:a.my-auto.mx-2.sm:mx-10.hover:underline {:href "https://github.com/babashka/babashka#installation"} "Install"]
+       [:a.my-auto.mx-2.sm:mx-10.hover:underline {:href "http://book.babashka.org"} "Docs"]
+       [:a.my-auto.mx-2.sm:mx-10.hover:underline {:href "https://github.com/babashka/babashka/blob/master/doc/news.md"} "News"]
+       [:a.my-auto.mx-2.sm:mx-10.hover:underline {:href "https://github.com/babashka/babashka/blob/master/doc/dev.md"}
         "Contribute"]]
 
       [:nav.flex.flex-row.flex-nowrap.mx-auto
