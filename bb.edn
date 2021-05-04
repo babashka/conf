@@ -1,11 +1,10 @@
 {:min-bb-version "0.3.7"
 
- :tasks {:requires ([babashka.pods :as pods])
-         generate  {:doc  "Re-generate index.html"
-                    :task (load-file "generate.clj")}
-
-         -fswatcher (do (pods/load-pod 'org.babashka/fswatcher "0.0.1")
-                        (require '[pod.babashka.fswatcher :as fw]))
+ :tasks {generate   {:doc  "Re-generate index.html"
+                     :task (load-file "generate.clj")}
+         -fswatcher {:requires ([babashka.pods :as pods])
+                     :task     (do (pods/load-pod 'org.babashka/fswatcher "0.0.1")
+                                   (require '[pod.babashka.fswatcher :as fw]))}
          watch      {:doc     "Watch changes in generate.clj and re-generate index.html on each change"
                      :depends [-fswatcher]
                      :task
