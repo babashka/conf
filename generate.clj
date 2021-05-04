@@ -53,7 +53,7 @@
        [:a.my-auto.mx-5 {:href "https://app.slack.com/client/T03RZGPFR/CLX41ASCS"}
         [:img {:src "./assets/slack.svg"
                :width "33x"}]]
-       [:a.my-auto.mx-5 {:href "https://twitter.com/search?q=%23babashka&src=typed_query&f=live"}
+       [:a.my-auto.mx-5 {:href "https://twitter.com/search?q=%23babashka%20OR%20babashka&src=typed_query&f=live"}
         [:img {:src "./assets/twitter.svg"}]]
        [:a.my-auto.mx-5 {:href "https://www.youtube.com/results?search_query=%23babashka+OR+%22babashka%22"}
         [:img {:src "./assets/youtube.svg"}]]]]]
