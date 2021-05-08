@@ -99,9 +99,10 @@
 
        [:article
         [:h3.text-3xl {:style "font-family: Forum, serif;"}
-         [:a {:href "https://github.com/babashka/babashka/issues/778"}
+         [:a {:href "https://book.babashka.org/#tasks"}
           "Task runner"]]
-        [:p.text-xl.mt-4 "Babashka features a built-in task runner which covers the most popular use cases of make, just and npm scripts. Stable version will be announced soon."]]
+        [:p.text-xl.mt-4 "Babashka features a built-in task runner which covers
+        the most popular use cases of make, just and npm scripts."]]
 
        [:article
         [:h3.text-3xl {:style "font-family: Forum, serif;"}
