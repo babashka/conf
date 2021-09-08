@@ -7,11 +7,12 @@
   [site]
   (spit
     "index.html"
-    (-> "data.edn"
-        slurp
-        edn/read-string
-        site
-        (hiccup/html))))
+    (->> "data.edn"
+         slurp
+         edn/read-string
+         site
+         (hiccup/html)
+         (str "<!DOCTYPE html>"))))
 
 (defn hr []
   [:hr.mx-auto.my-20.lg:my-20])
@@ -25,7 +26,8 @@
     [:meta {:name "viewport" :content "width=device-width, initial-scale=1.0"}]
     [:link {:rel "stylesheet" :href "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"}]
     [:link {:rel "stylesheet" :href "https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism-solarizedlight.min.css"}]
-    [:link {:href "https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" :rel "stylesheet"}]
+    ;; note, upgrading to tailwind 2.2.12 breaks the layout!
+    [:link {:href "https://unpkg.com/tailwindcss@2.2.10/dist/tailwind.min.css" :rel "stylesheet"}]
     [:link {:href "https://fonts.gstatic.com" :rel "preconnect"}]
     [:link {:rel "stylesheet" :href "https://fonts.googleapis.com/css2?family=Forum&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"}]
     [:script {:src "https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js" :defer true}]
