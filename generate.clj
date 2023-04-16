@@ -39,35 +39,24 @@
     [:header.w-full.shadow-md.relative.bg-white {:style "box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.05);"}
      [:div.container.h-auto.mx-auto.grid.grid-cols-1.py-6.lg:grid-flow-col.lg:auto-cols-max
       [:h1.text-lg.mb-5.mx-auto.lg:mx-0.lg:mb-auto.col-end-auto
-       [:img {:src "https://raw.githubusercontent.com/babashka/babashka/master/logo/babashka.svg"
+       [:img {:src "./assets/babashka.svg"
               :width "200px"}]]
 
       [:nav.flex.flex-row.flex-nowrap.mb-5.lg:mb-0.mx-auto
-       [:a.my-auto.mx-2.sm:mx-10.hover:underline {:href "https://github.com/babashka/babashka#installation"} "Install"]
-       [:a.my-auto.mx-2.sm:mx-10.hover:underline {:href "http://book.babashka.org"} "Docs"]
-       [:a.my-auto.mx-2.sm:mx-10.hover:underline {:href "https://github.com/babashka/babashka/blob/master/doc/news.md"} "News"]
-       [:a.my-auto.mx-2.sm:mx-10.hover:underline {:href "https://github.com/babashka/babashka/blob/master/doc/dev.md"}
-        "Contribute"]]
+       [:a.my-auto.mx-2.sm:mx-10.hover:underline {:href "https://goo.gl/maps/9KHpcXevvvFJbe5M8"} "Venue"]
+       [:a.my-auto.mx-2.sm:mx-10.hover:underline {:href ""} "Call for Papers"]]
 
       [:nav.flex.flex-row.flex-nowrap.mx-auto
-       [:a.my-auto.mx-5 {:href "https://github.com/babashka/babashka"}
-        [:img {:src "./assets/github.svg"}]]
-       [:a.my-auto.mx-5 {:href "https://app.slack.com/client/T03RZGPFR/CLX41ASCS"}
+       [:a.my-auto.mx-5 {:href "https://app.slack.com/client/T03RZGPFR/C04VAK5U86L"}
         [:img {:src "./assets/slack.svg"
                :width "33x"}]]
        [:a.my-auto.mx-5 {:href "https://twitter.com/search?q=%23babashka%20OR%20babashka&src=typed_query&f=live"}
-        [:img {:src "./assets/twitter.svg"}]]
-       [:a.my-auto.mx-5 {:href "https://www.youtube.com/results?search_query=%23babashka+OR+%22babashka%22"}
-        [:img {:src "./assets/youtube.svg"}]]]]]
+        [:img {:src "./assets/twitter.svg"}]]]]]
 
     [:main.relative.px-10.pt-24.md:px-32.md:pt-32.lg:px-80.lg:pt-60
      [:section
-      [:h1.text-6xl {:style "font-family: Forum, serif;"} "Fast native Clojure scripting runtime"]
-      [:p.text-xl.mt-12.break-word "Avoid switching between Clojure and bash scripts. Enjoy your parens on the command line."]
-      [:div.mt-20
-       [:pre [:code.language-clojure "time bb -e '{:ci (System/getenv \"CI\")}'
-{:ci \"true\"}
-0.01s user 0.01s system 79% cpu 0.026 total"]]]]
+      [:h1.text-6xl {:style "font-family: Forum, serif;"} "First babashka-conf in Berlin"]
+      [:h2.text-5xl {:style "font-family: Forum, serif;"} "10th June 2023"]]
 
      (hr)
 
@@ -112,45 +101,9 @@
           "Pods"]]
         [:p.text-xl.mt-4 "Babashka can shell out to other CLI programs like you
         are used to in bash. It goes one step further and offers seamless
-        integration with other binaries using the pod protocol. Pods can be implemented in any language, including Clojure, Rust and Go."]]
-       ]]
+        integration with other binaries using the pod protocol. Pods can be implemented in any language, including Clojure, Rust and Go."]]]]
 
      (hr)
-
-     [:section
-      [:div.col-start-1.col-end-7.row-start-2.row-end-3.lg:row-start-1.lg:row-end-2.lg:col-start-1.lg:col-end-4
-       [:h1.text-5xl {:style "font-family: Forum, serif;"} "Community"]
-       [:p.text-xl.mt-10 "The "
-        [:a {:href "https://app.slack.com/client/T03RZGPFR/CLX41ASCS"}
-         "babashka channel on Clojurians Slack" ]
-        " has quickly summoned more than 500 members. We are sharing ideas and helping each other out with questions and issues."
-        [:a {:href "https://github.com/babashka/babashka/discussions"} " Github
-         discussions"] " can be used to reach out for any topic if you are more
-         into slower moving communication."]
-       [:div.my-4.grid.grid-cols-2.w-80.gap-4
-        [:button.border.border-gray-900.p-2
-         [:a {:href "https://app.slack.com/client/T03RZGPFR/CLX41ASCS"}
-          "Clojurians Slack"]]
-        [:button.border.border-gray-900.p-2
-         [:a {:href "https://github.com/babashka/babashka/discussions"}
-          "Github Discussions"]]]]]
-
-     (hr)
-
-     [:section;; .grid.grid-cols-6.gap-4.grid-rows-2.lg:grid-rows-1
-      [:div.col-start-1.col-end-7.row-start-2.row-end-3.lg:row-start-1.lg:row-end-2.lg:col-start-1.lg:col-end-4
-       [:h1.text-5xl {:style "font-family: Forum, serif;"} "Support the project"]
-
-       [:p.text-xl.mt-10
-        "If you enjoy babashka and it is helping you succeed, consider
-        sponsoring the development and maintainance of this project."]
-       [:div.my-4.grid.grid-cols-2.w-80.gap-4
-        [:button.border.border-gray-900.p-2
-         [:a {:href "https://github.com/sponsors/borkdude"}
-          "Github Sponsors"]]
-        [:button.border.border-gray-900.p-2
-         [:a {:href "https://opencollective.com/babashka"}
-          "OpenCollective"]]]]]
 
      [:div.mx-auto.my-20.lg:my-20]
      [:hr]
