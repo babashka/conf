@@ -17,6 +17,31 @@
 (defn hr []
   [:hr.mx-auto.my-20.lg:my-20])
 
+(def intro 
+  [:div.mt-10
+   [:p.text-xl.mt-4 "Welcome to the first ever conference dedicated to Babashka! It will not only be about showcasing the latest advancements and use cases of the Babashka, but also about celebrating the community that has formed around it."]])
+
+
+(def call-for-proposals
+  [:div.mt-10
+   [:p.text-xl.mt-4 "Want to contribute a presentation? Great – we'd love to hear from you."]
+   [:br]
+   [:p.text-xl.mt-4 "To submit a proposal, send us an email at babashka.conf@gmail.com. Your proposal doesn't have to be long. Include just enough information for us to be able to judge whether the talk would be a good fit."]
+   [:p.text-xl.mt-4 "- 20 min of speaking time (plus 10 min Q&A) - as Clojurists, we like conciseness in our talks as well as in our language."]
+   [:p.text-xl.mt-4 "- Topics include Babashka and related topics at all skill levels (beginner-level talks are welcome as well as expert topics). We want to hear what’s exciting to you!"]
+   [:p.text-xl.mt-4 "- Looking for inspiration on writing a proposal? Check out the great"
+    [:a.mx-4 {:href "https://blog.cssconf.eu/2014/06/12/how-to-write-a-great-talk-proposal-for-a-tech-conference/"} " CSSConf guide"]]
+   [:br]
+   [:p.text-xl.mt-4 "As a free conference, babashka-conf won’t be able to pay travel or accommodation for speakers."]
+   [:p.text-xl.mt-4 "Your proposal should include the following:"]
+   [:p.text-xl.mt-4 "- A pithy title"]
+   [:p.text-xl.mt-4 "- An abstract (1500 characters max)"]
+   [:p.text-xl.mt-4 "- A short author bio (600 characters max)"]
+   [:p.text-xl.mt-4 "- Contact information (email address and optionally Clojurians slack handle and Twitter handle)"]
+   [:p.text-xl.mt-4 "- Optionally links to additional material (github projects, previous presentations)"]
+   [:p.text-xl.mt-4 "The call for proposals is open until May 10, 2023. We will notify speakers on May 17. If you have any questions about the CfP, don't hesitate to reach out at babashka.conf@gmail.com."]
+   [:p.text-xl.mt-4 "If you're unsure whether your topic fits babashka-conf, we encourage you to submit your proposal or to email us. In good Clojure conference tradition, we're curious about lots of things in adjacent fields, including Clojure community, software engineering practices, diversity, industry experience reports, devops etc."]])
+
 (defn site
   [_]
   [:html
@@ -43,8 +68,7 @@
               :width "200px"}]]
 
       [:nav.flex.flex-row.flex-nowrap.mb-5.lg:mb-0.mx-auto
-       [:a.my-auto.mx-2.sm:mx-10.hover:underline {:href "https://goo.gl/maps/9KHpcXevvvFJbe5M8"} "Venue"]
-       [:a.my-auto.mx-2.sm:mx-10.hover:underline {:href ""} "Call for Papers"]]
+       [:a.my-auto.mx-2.sm:mx-10.hover:underline {:href "https://goo.gl/maps/9KHpcXevvvFJbe5M8"} "Venue"]]
 
       [:nav.flex.flex-row.flex-nowrap.mx-auto
        [:a.my-auto.mx-5 {:href "https://app.slack.com/client/T03RZGPFR/C04VAK5U86L"}
@@ -56,55 +80,19 @@
     [:main.relative.px-10.pt-24.md:px-32.md:pt-32.lg:px-80.lg:pt-60
      [:section
       [:h1.text-6xl {:style "font-family: Forum, serif;"} "First babashka-conf in Berlin"]
-      [:h2.text-5xl {:style "font-family: Forum, serif;"} "10th June 2023"]]
+      [:h2.text-5xl {:style "font-family: Forum, serif;"} "10th June 2023"]
+      intro]
 
      (hr)
 
      [:section
-      [:h1.text-5xl {:style "font-family: Forum, serif;"} "Features"]
-      [:div.mt-10.grid.gap-4.grid-cols-1.lg:grid-cols-3.lg:gap-8
-       [:article
-        [:h3.text-3xl {:style "font-family: Forum, serif;"} "Instant startup"]
-        [:p.text-xl.mt-4 "Leveraging GraalVM native-image and the Small Clojure Interpreter, babashka is a self-contained and instantly starting scripting environment."]]
-       [:article
-        [:h3.text-3xl {:style "font-family: Forum, serif;"}
-         [:a {:href "https://book.babashka.org/#libraries"}
-          "Batteries included"]]
-        [:p.text-xl.mt-4 "Babashka comes with scripting batteries included:
-        tools.cli, cheshire, babashka.fs, babashka.process, java.time and many
-        more libraries and classes."]]
-       [:article
-        [:h3.text-3xl {:style "font-family: Forum, serif;"} "Cross-platform"]
-        [:p.text-xl.mt-4 "Babashka scripts work on linux, macOS and Windows."]]
-       [:article
-        [:h3.text-3xl {:style "font-family: Forum, serif;"}
-         [:a {:href "https://github.com/babashka/babashka/blob/master/doc/projects.md#libraries"} "Libraries"]]
-        [:p.text-xl.mt-4 "Besides the built-in libraries, babashka is able to
-        load libraries from source, tapping into the world of already existing
-        Clojure libraries."]]
-       [:article
-        [:h3.text-3xl {:style "font-family: Forum, serif;"}
-         "Multi-threaded"]
-        [:p.text-xl.mt-4 "Babashka supports real JVM threads and like Clojure,
-        supports futures and dynamic thread-locally bound vars"]]
-
-       [:article
-        [:h3.text-3xl {:style "font-family: Forum, serif;"}
-         [:a {:href "https://book.babashka.org/#tasks"}
-          "Task runner"]]
-        [:p.text-xl.mt-4 "Babashka features a built-in task runner which covers
-        the most popular use cases of make, just and npm scripts."]]
-
-       [:article
-        [:h3.text-3xl {:style "font-family: Forum, serif;"}
-         [:a {:href "https://github.com/babashka/pod-registry"}
-          "Pods"]]
-        [:p.text-xl.mt-4 "Babashka can shell out to other CLI programs like you
-        are used to in bash. It goes one step further and offers seamless
-        integration with other binaries using the pod protocol. Pods can be implemented in any language, including Clojure, Rust and Go."]]]]
-
-     (hr)
-
+      [:h1.text-5xl {:style "font-family: Forum, serif;"} "Call for Proposals"]
+      [:div call-for-proposals]] 
+     [:section
+      [:br]
+      [:h1.text-5xl {:style "font-family: Forum, serif;"} "Thank you to Pitch"]
+      [:br] 
+      [:div "Thank you to our friends at Pitch for providing the venue."]]
      [:div.mx-auto.my-20.lg:my-20]
      [:hr]
      [:footer.footer-1.py-8.sm:py-12
