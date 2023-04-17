@@ -19,7 +19,7 @@
 
 (def intro 
   [:div.mt-10
-   [:p.text-xl.mt-4 "Welcome to the first ever conference dedicated to Babashka! It will not only be about showcasing the latest advancements and use cases of the Babashka, but also about celebrating the community that has formed around it."]])
+   [:p.text-xl.mt-4 "Welcome to the first ever conference dedicated to Babashka! It will not only be about showcasing the latest advancements and use cases of Babashka, but also about celebrating the community that has formed around it."]])
 
 
 (def call-for-proposals
