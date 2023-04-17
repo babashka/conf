@@ -27,13 +27,13 @@
    [:p.text-xl.mt-4 "Want to contribute a presentation? Great – we'd love to hear from you."]
    [:br]
    [:p.text-xl.mt-4 "To submit a proposal, send us an email at "
-    [:a.underline.text-blue-600.hover:text-blue-800.visited:text-purple-600
+    [:a.my-auto.hover:underline
      {:href "mailto:babashka.conf@gmail.com"} "babashka.conf@gmail.com"]
     ". Your proposal doesn't have to be long. Include just enough information for us to be able to judge whether the talk would be a good fit."]
    [:p.text-xl.mt-4 "- 20 min of speaking time (plus 10 min Q&A) - as Clojurists, we like conciseness in our talks as well as in our language."]
    [:p.text-xl.mt-4 "- Topics include Babashka and related topics at all skill levels (beginner-level talks are welcome as well as expert topics). We want to hear what’s exciting to you!"]
    [:p.text-xl.mt-4 "- Looking for inspiration on writing a proposal? Check out the great "
-    [:a.underline.text-blue-600.hover:text-blue-800.visited:text-purple-600
+    [:a.my-auto.hover:underline
      {:href "https://blog.cssconf.eu/2014/06/12/how-to-write-a-great-talk-proposal-for-a-tech-conference/"}
      "CSSConf guide"]]
    [:br]
@@ -46,7 +46,7 @@
    [:p.text-xl.mt-4 "- Optionally links to additional material (github projects, previous presentations)"]
    [:p.text-xl.mt-4
     "The call for proposals is open until May 10, 2023. We will notify speakers on May 17. If you have any questions about the CfP, don't hesitate to reach out at "
-    [:a.underline.text-blue-600.hover:text-blue-800.visited:text-purple-600
+    [:a.my-auto.hover:underline
      {:href "mailto:babashka.conf@gmail.com"} "babashka.conf@gmail.com"]
     "."]
    [:p.text-xl.mt-4 "If you're unsure whether your topic fits babashka-conf, we encourage you to submit your proposal or to email us. In good Clojure conference tradition, we're curious about lots of things in adjacent fields, including Clojure community, software engineering practices, diversity, industry experience reports, devops etc."]])
@@ -76,6 +76,8 @@
        [:img {:src "./assets/babashka.svg"
               :width "200px"}]]
 
+      [:nav.flex.flex-row.flex-nowrap.mb-5.lg:mb-0.mx-auto
+       [:a.my-auto.mx-2.sm:mx-10.hover:underline {:href ""} "TODO: Tickets"]]
       [:nav.flex.flex-row.flex-nowrap.mb-5.lg:mb-0.mx-auto
        [:a.my-auto.mx-2.sm:mx-10.hover:underline {:href "https://goo.gl/maps/9KHpcXevvvFJbe5M8"} "Venue"]]
 
