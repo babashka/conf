@@ -39,7 +39,7 @@
         "CSSConf guide"]]]]
     [:h4.text-xl.font-medium.mt-4 "Workshops"
      [:ul.text-lg.list-disc.list-inside
-      [:li "You've got 90 minutes max for you workshop"]
+      [:li "You've got 90 minutes max for your workshop"]
       [:li "Topics include all things related to babashka and the wider ecosystem"]
       [:li "Please mention the level of prior knowledge required"]]]
     [:h4.text-xl.font-medium.mt-4 "Your proposal should include the following:"
