@@ -83,9 +83,9 @@
               :width "200px"}]]
 
       [:nav.flex.flex-row.flex-nowrap.mb-5.lg:mb-0.mx-auto
-       [:a.my-auto.mx-2.sm:mx-10.hover:underline {:href ""} "TODO: Tickets"]]
+       [:a.my-auto.mx-2.sm:mx-10.hover:underline {:href ""} "Coming soon: Tickets"]]
       [:nav.flex.flex-row.flex-nowrap.mb-5.lg:mb-0.mx-auto
-       [:a.my-auto.mx-2.sm:mx-10.hover:underline {:href ""} "TODO: Buy Merch"]]
+       [:a.my-auto.mx-2.sm:mx-10.hover:underline {:href ""} "Coming soon: Buy Merch"]]
       [:nav.flex.flex-row.flex-nowrap.mb-5.lg:mb-0.mx-auto
        [:a.my-auto.mx-2.sm:mx-10.hover:underline {:href "https://goo.gl/maps/9KHpcXevvvFJbe5M8"} "Venue"]]
 
@@ -98,7 +98,7 @@
 
     [:main.relative.px-10.pt-24.md:px-32.md:pt-32.lg:px-80.lg:pt-60
      [:section
-      [:h2.text-6xl {:style "font-family: Forum, serif;"} "1st babashka-conf in Berlin"]
+      [:h2.text-6xl.text-center {:style "font-family: Forum, serif;"} "1st babashka-conf in Berlin"]
       [:br]
       [:p.text-4xl.text-center {:style "font-family: Forum, serif;"} "10th June 2023"]
       intro]
