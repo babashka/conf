@@ -21,6 +21,11 @@
   [:div.mt-10
    [:p.text-xl.mt-4 "Welcome to the first ever conference dedicated to Babashka! It will not only be about showcasing the latest advancements and use cases of Babashka, but also about celebrating the community that has formed around it."]])
 
+(def announcements
+  [:section
+   [:h2.text-4xl {:style "font-family: Forum, serif;"} "Announcements"]
+
+   [:p.text-xl.mt-4 "We're excited to announce that Michiel Borkent ("[:a {:href "https://twitter.com/borkdude"} "@borkdude"] ") the author of Babashka, will be joining us as a keynote speaker. He is also a mastermind behind clj-kondo, SCI, and cherry. With his commitment to open source tools Michiel is a well respected and influential member of the Clojure community. Don't miss out on this incredible chance to hear from him at our conference!"]])
 
 (def call-for-proposals
   [:h3.text-2xl.mt-4 "Want to contribute a talk or a workshop? Great – we'd love to hear from you."
@@ -105,9 +110,13 @@
 
      (hr)
 
+     announcements
+     
+     (hr)
+     
      [:section
       [:h2.text-4xl {:style "font-family: Forum, serif;"} "Call for Proposals"]
-      [:div.mb-6 call-for-proposals]] 
+      [:div.mb-6 call-for-proposals]]
 
      (hr)
 
@@ -118,8 +127,7 @@
      (hr)
 
      [:footer.footer-1.py-8.sm:py-12
-      "Credits: initial site design by Alice Kile."]
-     ,]]])
+      "Credits: initial site design by Alice Kile."]]]])
 
 
 (convert-to-html site)
