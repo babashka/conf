@@ -88,7 +88,7 @@
               :width "200px"}]]
 
       [:nav.flex.flex-row.flex-nowrap.mb-5.lg:mb-0.mx-auto
-       [:a.my-auto.mx-2.sm:mx-10.hover:underline {:href ""} "Coming soon: Tickets"]]
+       [:a.my-auto.mx-2.sm:mx-10.hover:underline {:href "https://www.meetup.com/clojure-berlin/events/292998496/"} "Tickets"]]
       [:nav.flex.flex-row.flex-nowrap.mb-5.lg:mb-0.mx-auto
        [:a.my-auto.mx-2.sm:mx-10.hover:underline {:href ""} "Coming soon: Buy Merch"]]
       [:nav.flex.flex-row.flex-nowrap.mb-5.lg:mb-0.mx-auto
