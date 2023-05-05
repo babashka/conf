@@ -56,7 +56,7 @@
       [:nav.flex.flex-row.flex-nowrap.mb-5.lg:mb-0.mx-auto
        [:a.my-auto.mx-2.sm:mx-5.hover:underline {:href "schedule.html"} "Schedule"]]
       [:nav.flex.flex-row.flex-nowrap.mb-5.lg:mb-0.mx-auto
-       [:a.my-auto.mx-2.sm:mx-5.hover:underline {:href ""} "Coming soon: Buy Merch"]]
+       [:a.my-auto.mx-2.sm:mx-5.hover:underline {:href "https://www.etsy.com/listing/1475981599/babashka-conf-berlin-2023-t-shirt"} "T-shirt"]]
       [:nav.flex.flex-row.flex-nowrap.mb-5.lg:mb-0.mx-auto
        [:a.my-auto.mx-2.sm:mx-5.hover:underline {:href "https://goo.gl/maps/9KHpcXevvvFJbe5M8"} "Venue"]]
 
