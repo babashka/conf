@@ -4,18 +4,70 @@
          '[hiccup.core :as hiccup])
 
 (defn convert-to-html
-  [site]
+  [index schedule]
+  (spit
+    "schedule.html"
+    (->> "data.edn"
+         slurp
+         edn/read-string
+         schedule
+         (hiccup/html)
+         (str "<!DOCTYPE html>")))
   (spit
     "index.html"
     (->> "data.edn"
          slurp
          edn/read-string
-         site
+         index
          (hiccup/html)
          (str "<!DOCTYPE html>"))))
 
 (defn hr []
   [:hr.mx-auto.my-20.lg:my-20])
+
+(defn head [content]
+  [:html
+   [:head
+    [:meta {:charset "UTF-8"}]
+    [:title "babashka-conf"]
+    [:meta {:name "viewport" :content "width=device-width, initial-scale=1.0"}]
+    [:link {:rel "stylesheet" :href "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"}]
+    [:link {:rel "stylesheet" :href "https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism-solarizedlight.min.css"}]
+    ;; note, upgrading to tailwind 2.2.12 breaks the layout!
+    [:link {:href "https://unpkg.com/tailwindcss@2.2.10/dist/tailwind.min.css" :rel "stylesheet"}]
+    [:link {:href "https://fonts.gstatic.com" :rel "preconnect"}]
+    [:link {:rel "stylesheet" :href "https://fonts.googleapis.com/css2?family=Forum&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"}]
+    [:script {:src "https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js" :defer true}]
+    [:script {:src "https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/plugins/autoloader/prism-autoloader.min.js" :defer true}]]
+
+
+   [:header.overflow-x-hidden {:style "font-family: 'Raleway', sans-serif;"}
+    [:div.absolute {:style "width: 180vw; height: 200vh; background: linear-gradient(90deg, #B70000,rgba(227, 30, 37, 0.5) 50%, rgba(255, 255, 255, 0.1)); transform: rotateZ(-35deg) translate(-130vw, -150vh);"}]
+    [:header.w-full.shadow-md.relative.bg-white {:style "box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.05);"}
+     [:div.container.h-auto.mx-auto.grid.grid-cols-1.py-6.lg:grid-flow-col.lg:auto-cols-max
+      [:h1.text-lg.mb-5.mx-auto.lg:mx-0.lg:mb-auto.col-end-auto
+       [:a {:href "index.html"}
+        [:img {:src "./assets/babashka.svg"
+               :alt "Babashka Logo"
+               :width "200px"}]]]
+
+      [:nav.flex.flex-row.flex-nowrap.mb-5.lg:mb-0.mx-auto
+       [:a.my-auto.mx-2.sm:mx-5.hover:underline {:href "https://www.meetup.com/clojure-berlin/events/292998496/"} "Tickets"]]
+      [:nav.flex.flex-row.flex-nowrap.mb-5.lg:mb-0.mx-auto
+       [:a.my-auto.mx-2.sm:mx-5.hover:underline {:href "schedule.html"} "Schedule"]]
+      [:nav.flex.flex-row.flex-nowrap.mb-5.lg:mb-0.mx-auto
+       [:a.my-auto.mx-2.sm:mx-5.hover:underline {:href ""} "Coming soon: Buy Merch"]]
+      [:nav.flex.flex-row.flex-nowrap.mb-5.lg:mb-0.mx-auto
+       [:a.my-auto.mx-2.sm:mx-5.hover:underline {:href "https://goo.gl/maps/9KHpcXevvvFJbe5M8"} "Venue"]]
+
+      [:nav.flex.flex-row.flex-nowrap.mx-auto
+       [:a.my-auto.mx-5 {:href "https://app.slack.com/client/T03RZGPFR/C04VAK5U86L"}
+        [:img {:src "./assets/slack.svg"
+               :width "33x"}]]
+       [:a.my-auto.mx-5 {:href "https://twitter.com/search?q=%23babashka%20OR%20babashka&src=typed_query&f=live"}
+        [:img {:src "./assets/twitter.svg"}]]]]]]
+   content])
+
 
 (def intro
   [:div.mt-10
@@ -62,45 +114,9 @@
      "."]
     [:p.text-xl.my-4 "If you're unsure whether your topic fits babashka-conf, we encourage you to submit your proposal or to email us. In good Clojure conference tradition, we're curious about lots of things in adjacent fields, including Clojure community, software engineering practices, diversity, industry experience reports, devops etc."]]])
 
-(defn site
+(defn index
   [_]
-  [:html
-   [:head
-    [:meta {:charset "UTF-8"}]
-    [:title "babashka-conf"]
-    [:meta {:name "viewport" :content "width=device-width, initial-scale=1.0"}]
-    [:link {:rel "stylesheet" :href "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"}]
-    [:link {:rel "stylesheet" :href "https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism-solarizedlight.min.css"}]
-    ;; note, upgrading to tailwind 2.2.12 breaks the layout!
-    [:link {:href "https://unpkg.com/tailwindcss@2.2.10/dist/tailwind.min.css" :rel "stylesheet"}]
-    [:link {:href "https://fonts.gstatic.com" :rel "preconnect"}]
-    [:link {:rel "stylesheet" :href "https://fonts.googleapis.com/css2?family=Forum&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"}]
-    [:script {:src "https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js" :defer true}]
-    [:script {:src "https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/plugins/autoloader/prism-autoloader.min.js" :defer true}]]
-
-
-   [:body.overflow-x-hidden {:style "font-family: 'Raleway', sans-serif;"}
-    [:div.absolute {:style "width: 180vw; height: 200vh; background: linear-gradient(90deg, #B70000,rgba(227, 30, 37, 0.5) 50%, rgba(255, 255, 255, 0.1)); transform: rotateZ(-35deg) translate(-130vw, -150vh);"}]
-    [:header.w-full.shadow-md.relative.bg-white {:style "box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.05);"}
-     [:div.container.h-auto.mx-auto.grid.grid-cols-1.py-6.lg:grid-flow-col.lg:auto-cols-max
-      [:h1.text-lg.mb-5.mx-auto.lg:mx-0.lg:mb-auto.col-end-auto
-       [:img {:src "./assets/babashka.svg"
-              :width "200px"}]]
-
-      [:nav.flex.flex-row.flex-nowrap.mb-5.lg:mb-0.mx-auto
-       [:a.my-auto.mx-2.sm:mx-10.hover:underline {:href "https://www.meetup.com/clojure-berlin/events/292998496/"} "Tickets"]]
-      [:nav.flex.flex-row.flex-nowrap.mb-5.lg:mb-0.mx-auto
-       [:a.my-auto.mx-2.sm:mx-10.hover:underline {:href ""} "Coming soon: Buy Merch"]]
-      [:nav.flex.flex-row.flex-nowrap.mb-5.lg:mb-0.mx-auto
-       [:a.my-auto.mx-2.sm:mx-10.hover:underline {:href "https://goo.gl/maps/9KHpcXevvvFJbe5M8"} "Venue"]]
-
-      [:nav.flex.flex-row.flex-nowrap.mx-auto
-       [:a.my-auto.mx-5 {:href "https://app.slack.com/client/T03RZGPFR/C04VAK5U86L"}
-        [:img {:src "./assets/slack.svg"
-               :width "33x"}]]
-       [:a.my-auto.mx-5 {:href "https://twitter.com/search?q=%23babashka%20OR%20babashka&src=typed_query&f=live"}
-        [:img {:src "./assets/twitter.svg"}]]]]]
-
+  (head
     [:main.relative.px-10.pt-24.md:px-32.md:pt-32.lg:px-80.lg:pt-60
      [:section
       [:h2.text-6xl.text-center {:style "font-family: Forum, serif;"} "1st babashka-conf in Berlin"]
@@ -111,9 +127,9 @@
      (hr)
 
      announcements
-     
+
      (hr)
-     
+
      [:section
       [:h2.text-4xl {:style "font-family: Forum, serif;"} "Call for Proposals"]
       [:div.mb-6 call-for-proposals]]
@@ -127,7 +143,67 @@
      (hr)
 
      [:footer.footer-1.py-8.sm:py-12
-      "Credits: initial site design by Alice Kile."]]]])
+      "Credits: initial site design by Alice Kile."]]))
+
+(defn schedule
+  [_]
+  (head
+    [:main.relative.px-10.pt-24.md:px-32.md:pt-32.lg:px-80.lg:pt-60
+     [:section
+      [:h2.text-6xl.text-center {:style "font-family: Forum, serif;"} "Tentative Schedule"]]
+
+     (hr)
+
+     [:h3.text-4xl.pb-2 {:style "font-family: Forum, serif;"} "Saturday, 10th June 2023"]
+     [:table.table-fixed.border-collapse.border-slate-400.w-full
+      [:tbody.text-xl
+       [:tr
+        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "9:00"] [:td.border.border-slate-300.pl-2 "Welcome"]]
+       [:tr
+        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "9:30"] [:td.border.border-slate-300.pl-2 ""]]
+       [:tr
+        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "10:00"] [:td.border.border-slate-300.pl-2 ""]]
+       [:tr
+        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "10:20"] [:td.border.border-slate-300.pl-2 "Break"]]
+       [:tr
+        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "10:50"] [:td.border.border-slate-300.pl-2 ""]]
+       [:tr
+        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "11:20"] [:td.border.border-slate-300.pl-2 ""]]
+       [:tr
+        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "11:50"] ["Lunch"]]
+       [:tr
+        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "13:30"] [:td.border.border-slate-300.pl-2 "Clojure on SCIs"
+                                                                          [:br]
+                                                                          [:span.font-bold.text-base "Malcolm Sparks"]
+                                                                          [:br]
+                                                                          [:span.font-medium.text-sm "30 min"]]]
+       [:tr
+        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "14:10"] [:td.border.border-slate-300.pl-2 ""]]
+       [:tr
+        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "15:00"] [:td.border.border-slate-300.pl-2 "Workshop"]]
+       [:tr
+        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "16:00"] [:td.border.border-slate-300.pl-2 "Break"]]
+       [:tr
+        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "16:20"] [:td.border.border-slate-300.pl-2 "TBA"
+                                                                          [:br]
+                                                                          [:span.font-bold.text-base "Michiel Borkent"]
+                                                                          [:br]
+                                                                          [:span.font-medium.text-sm "40 min"]]]
+       [:tr
+        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "17:10"] [:td.border.border-slate-300.pl-2 ""]]
+       [:tr
+        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "17:40"] [:td.border.border-slate-300.pl-2 ""]]]]
+
+     (hr)
+
+     [:section
+      [:div.text-5xl.my-4 {:style "font-family: Forum, serif;"} [:a {:href "https://pitch.com/"} "Thank you to Pitch"]]
+      [:div "Thank you to our friends at Pitch for providing the venue."]]
+
+     (hr)
+
+     [:footer.footer-1.py-8.sm:py-12
+      "Credits: initial site design by Alice Kile."]]))
 
 
-(convert-to-html site)
+(convert-to-html index schedule)
