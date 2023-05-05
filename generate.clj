@@ -160,39 +160,71 @@
        [:tr
         [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "9:00"] [:td.border.border-slate-300.pl-2 "Welcome"]]
        [:tr
-        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "9:30"] [:td.border.border-slate-300.pl-2 ""]]
-       [:tr
-        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "10:00"] [:td.border.border-slate-300.pl-2 ""]]
-       [:tr
-        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "10:20"] [:td.border.border-slate-300.pl-2 "Break"]]
-       [:tr
-        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "10:50"] [:td.border.border-slate-300.pl-2 ""]]
-       [:tr
-        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "11:20"] [:td.border.border-slate-300.pl-2 ""]]
-       [:tr
-        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "11:50"] ["Lunch"]]
-       [:tr
-        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "13:30"] [:td.border.border-slate-300.pl-2 "Clojure on SCIs"
+        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "9:30"] [:td.border.border-slate-300.pl-2 "Clojure on SCIs"
                                                                           [:br]
                                                                           [:span.font-bold.text-base "Malcolm Sparks"]
                                                                           [:br]
+                                                                          [:span.font-medium.text-sm "40 min"]]]
+       [:tr
+        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "10:20"] [:td.border.border-slate-300.pl-2 "Break"]]
+       [:tr
+        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "10:40"] [:td.border.border-slate-300.pl-2 ""
+                                                                          [:br]
+                                                                          [:span.font-bold.text-base ""]
+                                                                          [:br]
                                                                           [:span.font-medium.text-sm "30 min"]]]
        [:tr
-        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "14:10"] [:td.border.border-slate-300.pl-2 ""]]
+        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "11:20"] [:td.border.border-slate-300.pl-2 ""
+                                                                          [:br]
+                                                                          [:span.font-bold.text-base ""]
+                                                                          [:br]
+                                                                          [:span.font-medium.text-sm "30 min"]]]
        [:tr
-        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "15:00"] [:td.border.border-slate-300.pl-2 "Workshop"]]
+        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "11:50"] [:td.border.border-slate-300.pl-2 "Lunch"]]
        [:tr
-        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "16:00"] [:td.border.border-slate-300.pl-2 "Break"]]
+        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "13:30"] [:td.border.border-slate-300.pl-2 ""
+                                                                          [:br]
+                                                                          [:span.font-bold.text-base ""]
+                                                                          [:br]
+                                                                          [:span.font-medium.text-sm "30 min"]]]
        [:tr
-        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "16:20"] [:td.border.border-slate-300.pl-2 "TBA"
+        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "14:10"] [:td.border.border-slate-300.pl-2 ""
+                                                                          [:br]
+                                                                          [:span.font-bold.text-base ""]
+                                                                          [:br]
+                                                                          [:span.font-medium.text-sm "30 min"]]]
+       [:tr
+        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "14:40"] [:td.border.border-slate-300.pl-2 "Break"]]
+       [:tr
+        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "15:00"] [:td.border.border-slate-300.pl-2 "Workshop"
+                                                                          [:br]
+                                                                          [:span.font-bold.text-base ""]
+                                                                          [:br]
+                                                                          [:span.font-medium.text-sm "50 min"]]]
+       [:tr
+        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "16:00"] [:td.border.border-slate-300.pl-2 ""
+                                                                          [:br]
+                                                                          [:span.font-bold.text-base ""]
+                                                                          [:br]
+                                                                          [:span.font-medium.text-sm "30 min"]]]
+       [:tr
+        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "16:40"] [:td.border.border-slate-300.pl-2 "TBA"
                                                                           [:br]
                                                                           [:span.font-bold.text-base "Michiel Borkent"]
                                                                           [:br]
                                                                           [:span.font-medium.text-sm "40 min"]]]
        [:tr
-        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "17:10"] [:td.border.border-slate-300.pl-2 ""]]
+        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "17:10"] [:td.border.border-slate-300.pl-2 ""
+                                                                          [:br]
+                                                                          [:span.font-bold.text-base ""]
+                                                                          [:br]
+                                                                          [:span.font-medium.text-sm "30 min"]]]
        [:tr
-        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "17:40"] [:td.border.border-slate-300.pl-2 ""]]]]
+        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "17:40"] [:td.border.border-slate-300.pl-2 ""
+                                                                          [:br]
+                                                                          [:span.font-bold.text-base ""]
+                                                                          [:br]
+                                                                          [:span.font-medium.text-sm "20 min"]]]]]
 
      (hr)
 
