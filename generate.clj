@@ -182,7 +182,7 @@
                                                                           [:br]
                                                                           [:span.font-medium.text-sm "30 min"]]]
        [:tr
-        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "11:50"] [:td.border.border-slate-300.pl-2 "Lunch"]]
+        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "11:50"] [:td.border.border-slate-300.pl-2 "Lunch (we'll go out, bring cash)"]]
        [:tr
         [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "13:30"] [:td.border.border-slate-300.pl-2 ""
                                                                           [:br]
