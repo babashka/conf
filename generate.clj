@@ -77,7 +77,9 @@
   [:section
    [:h2.text-4xl {:style "font-family: Forum, serif;"} "Announcements"]
 
-   [:p.text-xl.mt-4 "We're excited to announce that Michiel Borkent ("[:a {:href "https://twitter.com/borkdude"} "@borkdude"] ") the author of Babashka, will be joining us as a keynote speaker. He is also a mastermind behind clj-kondo, SCI, and cherry. With his commitment to open source tools Michiel is a well respected and influential member of the Clojure community. Don't miss out on this incredible chance to hear from him at our conference!"]])
+   [:p.text-xl.mt-4 "We're excited to announce that Michiel Borkent ("[:a.my-auto.hover:underline {:href "https://twitter.com/borkdude"} "@borkdude"] ") the author of Babashka, will be joining us as a keynote speaker. He is also a mastermind behind clj-kondo, SCI, and cherry. With his commitment to open source tools Michiel is a well respected and influential member of the Clojure community. Don't miss out on this incredible chance to hear from him at our conference!"]
+
+   [:p.text-xl.mt-4 "Please " [:a.my-auto.hover:underline {:href "schedule.html" } "take a look at our tentative schedule"] " that will be updated with our speakers after we reviewed the proposals."]])
 
 (def call-for-proposals
   [:h3.text-2xl.mt-4 "Want to contribute a talk or a workshop? Great – we'd love to hear from you."
@@ -137,7 +139,7 @@
      (hr)
 
      [:section
-      [:div.text-5xl.my-4 {:style "font-family: Forum, serif;"} [:a {:href "https://pitch.com/"} "Thank you to Pitch"]]
+      [:div.text-5xl.my-4 {:style "font-family: Forum, serif;"} [:a.hover:underline {:href "https://pitch.com/"} "Thank you to Pitch"]]
       [:div "Thank you to our friends at Pitch for providing the venue."]]
 
      (hr)
