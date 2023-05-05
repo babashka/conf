@@ -194,37 +194,31 @@
                                                                           [:br]
                                                                           [:span.font-medium.text-sm "30 min"]]]
        [:tr
-        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "14:40"] [:td.border.border-slate-300.pl-2 "Break"]]
-       [:tr
-        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "15:00"] [:td.border.border-slate-300.pl-2 "Workshop"
+        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "14:50"] [:td.border.border-slate-300.pl-2 "Workshop"
                                                                           [:br]
                                                                           [:span.font-bold.text-base ""]
                                                                           [:br]
                                                                           [:span.font-medium.text-sm "50 min"]]]
        [:tr
+        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "15:40"] [:td.border.border-slate-300.pl-2 "Break"]]
+       [:tr
         [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "16:00"] [:td.border.border-slate-300.pl-2 ""
                                                                           [:br]
                                                                           [:span.font-bold.text-base ""]
                                                                           [:br]
+                                                                          [:span.font-medium.text-sm "20 min"]]]
+       [:tr
+        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "16:30"] [:td.border.border-slate-300.pl-2 ""
+                                                                          [:br]
+                                                                          [:span.font-bold.text-base ""]
+                                                                          [:br]
                                                                           [:span.font-medium.text-sm "30 min"]]]
        [:tr
-        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "16:40"] [:td.border.border-slate-300.pl-2 "TBA"
+        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "17:10"] [:td.border.border-slate-300.pl-2 "TBA"
                                                                           [:br]
                                                                           [:span.font-bold.text-base "Michiel Borkent"]
                                                                           [:br]
-                                                                          [:span.font-medium.text-sm "40 min"]]]
-       [:tr
-        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "17:10"] [:td.border.border-slate-300.pl-2 ""
-                                                                          [:br]
-                                                                          [:span.font-bold.text-base ""]
-                                                                          [:br]
-                                                                          [:span.font-medium.text-sm "30 min"]]]
-       [:tr
-        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "17:40"] [:td.border.border-slate-300.pl-2 ""
-                                                                          [:br]
-                                                                          [:span.font-bold.text-base ""]
-                                                                          [:br]
-                                                                          [:span.font-medium.text-sm "20 min"]]]]]
+                                                                          [:span.font-medium.text-sm "40 min"]]]]]
 
      (hr)
 
