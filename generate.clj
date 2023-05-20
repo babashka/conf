@@ -76,10 +76,9 @@
 (def announcements
   [:section
    [:h2.text-4xl {:style "font-family: Forum, serif;"} "Announcements"]
-
-   [:p.text-xl.mt-4 "We're excited to announce that Michiel Borkent ("[:a.my-auto.hover:underline {:href "https://twitter.com/borkdude"} "@borkdude"] ") the author of Babashka, will be joining us as a keynote speaker. He is also a mastermind behind clj-kondo, SCI, and cherry. With his commitment to open source tools Michiel is a well respected and influential member of the Clojure community. Don't miss out on this incredible chance to hear from him at our conference!"]
-
-   [:p.text-xl.mt-4 "Please " [:a.my-auto.hover:underline {:href "schedule.html" } "take a look at our tentative schedule"] " that will be updated with our speakers after we reviewed the proposals."]])
+      [:p.text-xl.mt-4 "We have now published " [:a.my-auto.hover:underline {:href "schedule.html"} "the schedule"] ". More details about the talks will be added soon."]
+   [:br]
+   [:p.text-xl.mt-4 "We're excited to announce that Michiel Borkent (" [:a.my-auto.hover:underline {:href "https://twitter.com/borkdude"} "@borkdude"] ") the author of Babashka, will be joining us as a keynote speaker. He is also a mastermind behind clj-kondo, SCI, and cherry. With his commitment to open source tools Michiel is a well respected and influential member of the Clojure community. Don't miss out on this incredible chance to hear from him at our conference!"]])
 
 (defn index
   [_]
@@ -119,81 +118,80 @@
   (head
     [:main.relative.px-10.pt-24.md:px-32.md:pt-32.lg:px-80.lg:pt-60
      [:section
-      [:h2.text-6xl.text-center {:style "font-family: Forum, serif;"} "Tentative Schedule"]]
+      [:h2.text-6xl.text-center {:style "font-family: Forum, serif;"} "Schedule"]]
 
      (hr)
 
-     [:h3.text-4xl.pb-2 {:style "font-family: Forum, serif;"} "Saturday, 10th June 2023"]
+     [:h3.text-4xl.pb-2 {:style "font-family: Forum, serif;"} "Saturday, 10th June 2023"] 
+     [:br]
      [:table.table-fixed.border-collapse.border-slate-400.w-full
       [:tbody.text-xl
        [:tr
-        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "9:00"] [:td.border.border-slate-300.pl-2 "Welcome"]]
+        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "9:00"] [:td.border.border-slate-300.pl-2 "Doors open"]]
        [:tr
-        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "9:30"] [:td.border.border-slate-300.pl-2 "Clojure on SCIs"
+        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "9:30"] [:td.border.border-slate-300.pl-2 "Welcome"]]
+       [:tr
+        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "9:40"] [:td.border.border-slate-300.pl-2 "Clojure on SCIs"
                                                                           [:br]
-                                                                          [:span.font-bold.text-base "Malcolm Sparks"]
+                                                                          [:span.text-base "Malcolm Sparks"]
                                                                           [:br]
                                                                           [:span.font-medium.text-sm "40 min"]]]
        [:tr
         [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "10:20"] [:td.border.border-slate-300.pl-2 "Break"]]
        [:tr
-        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "10:40"] [:td.border.border-slate-300.pl-2 ""
+        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "10:40"] [:td.border.border-slate-300.pl-2 "Portuguese Driving Schools and bb"
                                                                           [:br]
-                                                                          [:span.font-bold.text-base ""]
+                                                                          [:span.text-base "Flavio Sousa"]
                                                                           [:br]
                                                                           [:span.font-medium.text-sm "30 min"]]]
        [:tr
-        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "11:20"] [:td.border.border-slate-300.pl-2 ""
+        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "11:20"] [:td.border.border-slate-300.pl-2 "SCI for Science"
                                                                           [:br]
-                                                                          [:span.font-bold.text-base ""]
+                                                                          [:span.text-base "Daniel Slutsky"]
                                                                           [:br]
                                                                           [:span.font-medium.text-sm "30 min"]]]
        [:tr
         [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "11:50"] [:td.border.border-slate-300.pl-2 "Lunch (we'll go out, bring cash)"]]
        [:tr
-        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "13:30"] [:td.border.border-slate-300.pl-2 ""
+        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "13:30"] [:td.border.border-slate-300.pl-2 "Lightning talks"
                                                                           [:br]
-                                                                          [:span.font-bold.text-base ""]
-                                                                          [:br]
-                                                                          [:span.font-medium.text-sm "30 min"]]]
-       [:tr
-        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "14:10"] [:td.border.border-slate-300.pl-2 ""
-                                                                          [:br]
-                                                                          [:span.font-bold.text-base ""]
+                                                                          [:span.text-base "sign up on the day - 5 min each"]
                                                                           [:br]
                                                                           [:span.font-medium.text-sm "30 min"]]]
        [:tr
-        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "14:50"] [:td.border.border-slate-300.pl-2 "Workshop"
+        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "14:10"] [:td.border.border-slate-300.pl-2 "Do or do not Clojure"
                                                                           [:br]
-                                                                          [:span.font-bold.text-base ""]
+                                                                          [:span.text-base "Gert Goet"]
                                                                           [:br]
-                                                                          [:span.font-medium.text-sm "50 min"]]]
+                                                                          [:span.font-medium.text-sm "30 min"]]]
        [:tr
-        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "15:40"] [:td.border.border-slate-300.pl-2 "Break"]]
-       [:tr
-        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "16:00"] [:td.border.border-slate-300.pl-2 ""
+        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "14:50"] [:td.border.border-slate-300.pl-2 "Don't forget the REPL"
                                                                           [:br]
-                                                                          [:span.font-bold.text-base ""]
+                                                                          [:span.text-base "Martin Kavalar"]
+                                                                          [:br]
+                                                                          [:span.font-medium.text-sm "30 min"]]]
+       [:tr
+        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "15:20"] [:td.border.border-slate-300.pl-2 "Break"]]
+       [:tr
+        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "15:40"] [:td.border.border-slate-300.pl-2 "Birds of Feather"
+                                                                          [:br]
+                                                                          [:span.text-base "We will break into smaller groups to discuss topics of interest"]
                                                                           [:br]
                                                                           [:span.font-medium.text-sm "20 min"]]]
        [:tr
-        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "16:30"] [:td.border.border-slate-300.pl-2 ""
+        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "16:40"] [:td.border.border-slate-300.pl-2 "Build Your Own Little Memex with Babashka"
                                                                           [:br]
-                                                                          [:span.font-bold.text-base ""]
+                                                                          [:span.text-base "Teodor Heggelund"]
                                                                           [:br]
                                                                           [:span.font-medium.text-sm "30 min"]]]
        [:tr
-        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "17:10"] [:td.border.border-slate-300.pl-2 "TBA"
+        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "17:20"] [:td.border.border-slate-300.pl-2 "Growing an ecosystem"
                                                                           [:br]
-                                                                          [:span.font-bold.text-base "Michiel Borkent"]
+                                                                          [:span.text-base "Michiel Borkent"]
                                                                           [:br]
                                                                           [:span.font-medium.text-sm "40 min"]]]]]
 
-     (hr)
 
-     [:section
-      [:div.text-5xl.my-4 {:style "font-family: Forum, serif;"} [:a {:href "https://pitch.com/"} "Thank you to Pitch"]]
-      [:div "Thank you to our friends at Pitch for providing the venue."]]
 
      (hr)
 
