@@ -185,7 +185,7 @@
                                                                           [:br]
                                                                           [:span.font-medium.text-sm "30 min"]]]
        [:tr
-        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "17:20"] [:td.border.border-slate-300.pl-2 "Growing an ecosystem"
+        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "17:20"] [:td.border.border-slate-300.pl-2 "Growing An Ecosystem"
                                                                           [:br]
                                                                           [:span.text-base "Michiel Borkent"]
                                                                           [:br]
