@@ -171,13 +171,15 @@
                                                                           [:br]
                                                                           [:span.font-medium.text-sm "30 min"]]]
        [:tr
-        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "15:20"] [:td.border.border-slate-300.pl-2 "Break"]]
+        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "15:20"] [:td.border.border-slate-300.pl-2 "Break"
+        [:br]
+        [:span.font-medium.text-sm "20 min"]]]
        [:tr
         [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "15:40"] [:td.border.border-slate-300.pl-2 "Birds of Feather"
                                                                           [:br]
                                                                           [:span.text-base "We will break into smaller groups to discuss topics of interest"]
                                                                           [:br]
-                                                                          [:span.font-medium.text-sm "20 min"]]]
+                                                                          [:span.font-medium.text-sm "50 min"]]]
        [:tr
         [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "16:40"] [:td.border.border-slate-300.pl-2 "Build Your Own Little Memex with Babashka"
                                                                           [:br]
