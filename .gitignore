@@ -1,3 +1,4 @@
 Leiningen.gitignore
 .clj-kondo
 .vscode.cache
+.lsp
