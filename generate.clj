@@ -104,10 +104,13 @@
         [:path {:clip-rule "evenodd" :d "M0 22.206h3.7v-4.318h3.393A8.944 8.944 0 107.093 0H0v22.206zM3.7 3.7h3.393a5.243 5.243 0 010 10.486H3.701V3.7z" :fill-rule "evenodd" :fill "currentColor"}]]]]
      [:div.py-6 {:style "font-family: Forum, serif;"}
       [:a {:href "https://doctronic.de/"}
-       [:img.object-scale-down.w-96 {:src "./assets/doctronic-logo.png" :alt "doctronic"}]]]
+       [:img.w-96 {:style "transform-origin: top left; transform: scale(1.3);" :src "./assets/doctronic-logo.png" :alt "doctronic"}]]]
      [:div.py-6 {:style "font-family: Forum, serif;"}
       [:a {:href "https://www.scarletcomply.com/"}
-       [:img {:style "transform-origin: top left; transform: scale(2.3);" :src "./assets/scarlet_logo.svg" :alt "scarlet comply"}]]]]
+       [:img {:style "transform-origin: top left; transform: scale(2.3);" :src "./assets/scarlet_logo.svg" :alt "scarlet comply"}]]]
+     [:div.py-6 {:style "font-family: Forum, serif;"}
+      [:a {:href "https://www.juxt.pro/"}
+       [:img {:style "transform-origin: top left; transform: scale(0.4);" :src "./assets/juxt-logo.svg" :alt "JUXT Ltd"}]]]]
 
     (hr)
 
