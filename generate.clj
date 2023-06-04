@@ -38,7 +38,16 @@
     [:link {:href "https://fonts.gstatic.com" :rel "preconnect"}]
     [:link {:rel "stylesheet" :href "https://fonts.googleapis.com/css2?family=Forum&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"}]
     [:script {:src "https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js" :defer true}]
-    [:script {:src "https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/plugins/autoloader/prism-autoloader.min.js" :defer true}]]
+    [:script {:src "https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/plugins/autoloader/prism-autoloader.min.js" :defer true}]
+    [:style "
+.abstract {
+   font-size: 10pt;
+}
+.bio {
+   font-size: 10pt;
+   font-style: italic;
+}
+"]]
 
    [:header.overflow-x-hidden {:style "font-family: 'Raleway', sans-serif;"}
     [:div.absolute {:style "width: 180vw; height: 200vh; background: linear-gradient(90deg, #B70000,rgba(227, 30, 37, 0.5) 50%, rgba(255, 255, 255, 0.1)); transform: rotateZ(-35deg) translate(-130vw, -150vh);"}]
@@ -139,7 +148,9 @@
                                                                         [:br]
                                                                         [:span.text-base "Malcolm Sparks"]
                                                                         [:br]
-                                                                        [:span.font-medium.text-sm "40 min"]]]
+                                                                        [:span.font-medium.text-sm "40 min"]
+                                                                        [:p.abstract "In the past few years I've been developing a secure durable programmable system, called Site. The language of this system is SCI, the small-clojure-interpreter that powers babashka. In this talk I'll explain some of the notable features and benefits of this system, for example, how state updates are made by submitting database transactions (to XTDB) written as SCI code. I'll explain why I chose SCI and some of the reasons SCI makes a perfect scripting language to embed in a JVM-based application, providing some tips along the way to others who want to try using SCI in this way."]
+                                                                        [:p.bio "Malcolm is a Clojure developer with a keen interest in software architecture and API security. He is the co-founder and CTO of JUXT, a Clojure consulting firm."]]]
       [:tr
        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "10:20"] [:td.border.border-slate-300.pl-2 "Break"]]
       [:tr
@@ -147,7 +158,9 @@
                                                                          [:br]
                                                                          [:span.text-base "Flavio Sousa"]
                                                                          [:br]
-                                                                         [:span.font-medium.text-sm "30 min"]]]
+                                                                         [:span.font-medium.text-sm "30 min"]
+                                                                         [:p.abstract "In this talk, I'll show how Babashka is powering a no-frills not-for-profit initiative attempting to bring a much-needed layer of transparency to a traditional business, deemed too unsexy to disrupt. I'll explain how Babashka brings Clojure and sanity to the messy realities of web and PDF scraping and how it enables a low budget and performant \"serverless\" solution, reminiscent of simpler times in web development.\n\nJoin me for a potpourri of state bureaucracy, freedom of information acts, incomprehensible stubbornness and low budget solutions that steer away from big tech."]
+                                                                         [:p.bio "Flavio received a Master's in mechanical engineering from the University of Lisbon in 2010, where he worked for a Fluid Simulation Lab and published a couple of research papers. In 2013, he joined the booming Lisbon startup scene and fell in love with software development. Went to London in 2015 and has been working with Clojure pretty much ever since.\nFlavio's favorite book is Gödel, Escher, Bach, which made me realize just how amazing it is that we can actually use human language to tell machines what to do. Competed in Brazilian Jiu Jitsu until an injury put a stop to that, so now he just dances Brazilian Forró on the weekends."]]]
       [:tr
        [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "11:20"] [:td.border.border-slate-300.pl-2 "SCI for Science"
                                                                          [:br]
