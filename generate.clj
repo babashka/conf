@@ -44,6 +44,7 @@
    font-size: 10pt;
 }
 .bio {
+   margin-top: 10px;
    font-size: 10pt;
    font-style: italic;
 }
