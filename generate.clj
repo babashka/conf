@@ -212,12 +212,12 @@
                                                                          [:p.abstract "As Clojure developers, we love moldable tools. So let's build our own little memex with Babashka"]
                                                                          [:p.bio "Teodor builds analysis software for civil engineers from nine to five, and likes to spend after hours thinking-out-loud about programming as theory building, open source and collective knowledge management.\n"]]]
       [:tr
-       [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "17:20"] [:td.border.border-slate-300.pl-2 "Growing An Ecosystem (Closing Keynote)"
+       [:td.border.border-slate-300.h-14.pl-2 {:class "w-1/3"} "17:20"] [:td.border.border-slate-300.pl-2 "Growing an Ecosystem: Lessons Learned (Closing Keynote)"
                                                                          [:br]
                                                                          [:span.text-base "Michiel Borkent"]
                                                                          [:br]
                                                                          [:span.font-medium.text-sm "40 min"]
-                                                                         [:p.abstract "Keynote from Babashka's creator"]
+                                                                         [:p.abstract "In this talk, Michiel will take us on a journey through the babashka ecosystem, how it evolved into what it currently is and the lessons he learned along the way."]
                                                                          [:p.bio "Michiel Borkent (\n@borkdude\n) is the author of babashka, clj-kondo, SCI, cherry and several other Clojure projects. He has been using Clojure since 2010 as a tinkerer, lecturer and professional software developer. Since 2021 he dedicates most his time to open source Clojure software. Hobbies include eating vegetables and walking.\n"]]]]]
 
     (hr)
