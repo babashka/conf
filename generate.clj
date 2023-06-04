@@ -202,7 +202,7 @@
        [:td.border.border-slate-300.h-14.pl-2.align-top {:class "w-1/3"} "15:40"] [:td.border.border-slate-300.pl-2 "🦉🦉Birds of a Feather🦉🦉"
                                                                                    [:br]
                                                                                    [:span.font-medium.text-sm "50 min"]
-                                                                                   [:p.abstract "We will break into smaller groups to discuss topics of interest"]]]
+                                                                                   [:p.abstract "Have fun and learn! We will break into smaller groups to discuss topics of interest. Find out more at " [:a {:style "font-weight: bold" :href "https://gist.github.com/pesterhazy/b0d1864c1118bfca9202ca06f65eb886"} "What is a Birds of a Feather Session?"]]]]
 
       [:tr
        [:td.border.border-slate-300.h-14.pl-2.align-top {:class "w-1/3"} "16:40"] [:td.border.border-slate-300.pl-2 "Build Your Own Little Memex with Babashka"
