@@ -143,7 +143,7 @@
       [:tr
        [:td.border.border-slate-300.h-14.pl-2.align-top {:class "w-1/3"} "9:00"] [:td.border.border-slate-300.pl-2 "Doors open"]]
       [:tr
-       [:td.border.border-slate-300.h-14.pl-2.align-top {:class "w-1/3"} "9:30"] [:td.border.border-slate-300.pl-2 "☕☕️Welcome☕☕"]]
+       [:td.border.border-slate-300.h-14.pl-2.align-top {:class "w-1/3"} "9:30"] [:td.border.border-slate-300.pl-2 "️Welcome"]]
       [:tr
        [:td.border.border-slate-300.h-14.pl-2.align-top {:class "w-1/3"} "9:40"] [:td.border.border-slate-300.pl-2 "Clojure on SCIs (Opening Keynote)"
                                                                                   [:br]
@@ -153,7 +153,7 @@
                                                                                   [:p.abstract "In the past few years I've been developing a secure durable programmable system, called Site. The language of this system is SCI, the small-clojure-interpreter that powers babashka. In this talk I'll explain some of the notable features and benefits of this system, for example, how state updates are made by submitting database transactions (to XTDB) written as SCI code. I'll explain why I chose SCI and some of the reasons SCI makes a perfect scripting language to embed in a JVM-based application, providing some tips along the way to others who want to try using SCI in this way."]
                                                                                   [:p.bio "Malcolm is a Clojure developer with a keen interest in software architecture and API security. He is the co-founder and CTO of JUXT, a Clojure consulting firm."]]]
       [:tr
-       [:td.border.border-slate-300.h-14.pl-2.align-top {:class "w-1/3"} "10:20"] [:td.border.border-slate-300.pl-2 "Break"]]
+       [:td.border.border-slate-300.h-14.pl-2.align-top {:class "w-1/3"} "10:20"] [:td.border.border-slate-300.pl-2 "☕️☕Break☕☕"]]
       [:tr
        [:td.border.border-slate-300.h-14.pl-2.align-top {:class "w-1/3"} "10:40"] [:td.border.border-slate-300.pl-2 "Portuguese Driving Schools and Babashka"
                                                                                    [:br]
@@ -195,7 +195,7 @@
                                                                                    [:p.abstract "Babashka's instant startup time makes it a great choice for scripting. This can make it tempting to iterate by re-running scripts. This talk is a reminder that Babashka has good support for interactive development with the REPL.\n\nWe'll explore when you should consider reaching for the REPL. We hope you'll learn a few tricks about REPL-driven development in general and in Babashka in particular."]
                                                                                    [:p.bio "Martin Kavalar is a co-founder at Nextjournal, a hybrid between startup and research lab trying to improve programming. Nextjournal makes a polyglot computational notebook with a focus on reproducibility and a variety of open source tools, including Clerk, a programmer's assistant for Clojure.\n"]]]
       [:tr
-       [:td.border.border-slate-300.h-14.pl-2.align-top {:class "w-1/3"} "15:20"] [:td.border.border-slate-300.pl-2 "Break"
+       [:td.border.border-slate-300.h-14.pl-2.align-top {:class "w-1/3"} "15:20"] [:td.border.border-slate-300.pl-2 "☕☕Break☕☕"
                                                                                    [:br]
                                                                                    [:span.font-medium.text-sm "20 min"]]]
       [:tr
