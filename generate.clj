@@ -155,7 +155,7 @@
       [:tr
        [:td.border.border-slate-300.h-14.pl-2.align-top {:class "w-1/3"} "10:20"] [:td.border.border-slate-300.pl-2 "Break"]]
       [:tr
-       [:td.border.border-slate-300.h-14.pl-2.align-top {:class "w-1/3"} "10:40"] [:td.border.border-slate-300.pl-2 "Portuguese Driving Schools and bb"
+       [:td.border.border-slate-300.h-14.pl-2.align-top {:class "w-1/3"} "10:40"] [:td.border.border-slate-300.pl-2 "Portuguese Driving Schools and Babashka"
                                                                                    [:br]
                                                                                    [:span.text-base "Flavio Sousa"]
                                                                                    [:br]
@@ -179,15 +179,15 @@
                                                                                    [:br]
                                                                                    [:span.font-medium.text-sm "30 min"]]]
       [:tr
-       [:td.border.border-slate-300.h-14.pl-2.align-top {:class "w-1/3"} "14:10"] [:td.border.border-slate-300.pl-2 "Do or do not Clojure"
+       [:td.border.border-slate-300.h-14.pl-2.align-top {:class "w-1/3"} "14:10"] [:td.border.border-slate-300.pl-2 "Do or Do Not Clojure"
                                                                                    [:br]
                                                                                    [:span.text-base "Gert Goet"]
                                                                                    [:br]
                                                                                    [:span.font-medium.text-sm "30 min"]
-                                                                                   [:p.abstract "When was the last time you ran into a new library and thought: “If only I could give it a spin real quick…”. It’s this friction that deps-try tries to remove.\nAnd it shouldn’t matter whether the thing you want to try is a published library, a git-repository, a local project or just Clojure itself: you’ll spinup a rebel-readline powered REPL just as easily.\n\nIn this talk you’ll learn all about deps-try, how it aims to make Clojure more accessible to newcomers and how Babashka makes it all tick."]
+                                                                                   [:p.abstract "When was the last time you ran into a new library and thought: “If only I could give it a spin real quick…”? It’s this friction that deps-try tries to remove.\nAnd it shouldn’t matter whether the thing you want to try is a published library, a git-repository, a local project or just Clojure itself: you’ll spin up a rebel-readline powered REPL just as easily.\n\nIn this talk you’ll learn all about deps-try, how it aims to make Clojure more accessible to newcomers and how Babashka makes it all tick."]
                                                                                    [:p.bio "Gert is an independent consultant with over 15 years of experience building backends and tooling.\n\nWhile currently being on the lookout for a new Clojure project (are you using Clojure to improve the world? Let’s talk!), he’s co-organising the Aarhus Clojure-meetup, maintaining the Clojure event calendar, learning Danish and\nwriting open-source software. Currently his focus is on deps-try, a CLI-tool that aims to make it convenient to explore Clojure (or any library) from the REPL."]]]
       [:tr
-       [:td.border.border-slate-300.h-14.pl-2.align-top {:class "w-1/3"} "14:50"] [:td.border.border-slate-300.pl-2 "Don't forget the REPL"
+       [:td.border.border-slate-300.h-14.pl-2.align-top {:class "w-1/3"} "14:50"] [:td.border.border-slate-300.pl-2 "Don't Forget the REPL"
                                                                                    [:br]
                                                                                    [:span.text-base "Martin Kavalar"]
                                                                                    [:br]
@@ -199,7 +199,7 @@
                                                                                    [:br]
                                                                                    [:span.font-medium.text-sm "20 min"]]]
       [:tr
-       [:td.border.border-slate-300.h-14.pl-2.align-top {:class "w-1/3"} "15:40"] [:td.border.border-slate-300.pl-2 "🦉🦉Birds of Feather🦉🦉"
+       [:td.border.border-slate-300.h-14.pl-2.align-top {:class "w-1/3"} "15:40"] [:td.border.border-slate-300.pl-2 "🦉🦉Birds of a Feather🦉🦉"
                                                                                    [:br]
                                                                                    [:span.text-base "We will break into smaller groups to discuss topics of interest"]
                                                                                    [:br]
