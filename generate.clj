@@ -210,7 +210,7 @@
                                                                                    [:span.text-base "Teodor Heggelund"]
                                                                                    [:br]
                                                                                    [:span.font-medium.text-sm "30 min"]
-                                                                                   [:p.abstract "As Clojure developers, we love moldable tools. So let's build our own little memex with Babashka"]
+                                                                                   [:p.abstract "A memex is a tool for information capture, information storage and information retrieval. Memexes can be used to build theory, collect research, or explore one's own taste. In this talk, we will explore the history of memexes, how a memex can aid our learning process, and how we can build our own little memex with Babashka. "]
                                                                                    [:p.bio "Teodor builds analysis software for civil engineers from nine to five, and likes to spend after hours thinking-out-loud about programming as theory building, open source and collective knowledge management.\n"]]]
       [:tr
        [:td.border.border-slate-300.h-14.pl-2.align-top {:class "w-1/3"} "17:20"] [:td.border.border-slate-300.pl-2 "Growing an Ecosystem: Lessons Learned (Closing Keynote)"
