@@ -136,6 +136,9 @@
 
     (hr)
 
+    [:h3.text-4xl.pb-2 {:style "font-family: Forum, serif;"} "Friday, 9th June 2023"] 
+    [:p.text-xl.mt-4 "19:00 Pre-conference beers at Alte Turnhalle, Holteistraße 6-9, 10245 Berlin"]
+    [:br]
     [:h3.text-4xl.pb-2 {:style "font-family: Forum, serif;"} "Saturday, 10th June 2023"]
     [:br]
     [:table.table-fixed.border-collapse.border-slate-400.w-full
