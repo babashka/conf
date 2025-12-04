@@ -1,7 +1,7 @@
 #!/usr/bin/env bb
 
 (require '[clojure.edn :as edn]
-         '[hiccup2.core :as hiccup])
+         '[hiccup.core2 :as hiccup])
 
 (defn convert-to-html
   [index schedule]
@@ -61,32 +61,27 @@
                :width "200px"}]]]
 
       [:nav.flex.flex-row.flex-nowrap.mb-5.lg:mb-0.mx-auto
-       [:a.my-auto.mx-2.sm:mx-5.hover:underline {:href "https://www.meetup.com/the-dutch-clojure-meetup/events/312079164"} "Tickets"]]
-      #_[:nav.flex.flex-row.flex-nowrap.mb-5.lg:mb-0.mx-auto
+       [:a.my-auto.mx-2.sm:mx-5.hover:underline {:href "https://www.meetup.com/clojure-berlin/events/292998496/"} "Tickets"]]
+      [:nav.flex.flex-row.flex-nowrap.mb-5.lg:mb-0.mx-auto
        [:a.my-auto.mx-2.sm:mx-5.hover:underline {:href "schedule.html"} "Schedule"]]
       [:nav.flex.flex-row.flex-nowrap.mb-5.lg:mb-0.mx-auto
        [:a.my-auto.mx-2.sm:mx-5.hover:underline {:href "https://www.etsy.com/listing/1475981599/babashka-conf-berlin-2023-t-shirt"} "T-shirt"]]
       [:nav.flex.flex-row.flex-nowrap.mb-5.lg:mb-0.mx-auto
-       [:a.my-auto.mx-2.sm:mx-5.hover:underline {:href "https://maps.app.goo.gl/xqVZA57sfqHiXkb87"} "Venue"]]
+       [:a.my-auto.mx-2.sm:mx-5.hover:underline {:href "https://goo.gl/maps/9KHpcXevvvFJbe5M8"} "Venue"]]
 
       [:nav.flex.flex-row.flex-nowrap.mx-auto
        [:a.my-auto.mx-5 {:href "https://app.slack.com/client/T03RZGPFR/C04VAK5U86L"}
         [:img {:src "./assets/slack.svg"
                :width "33x"}]]
-       #_[:a.my-auto.mx-5 {:href "https://twitter.com/search?q=%23babashka%20OR%20babashka&src=typed_query&f=live"}
+       [:a.my-auto.mx-5 {:href "https://twitter.com/search?q=%23babashka%20OR%20babashka&src=typed_query&f=live"}
         [:img {:src "./assets/twitter.svg"}]]]]]]
    content])
 
 (def intro
   [:div.mt-10
-   [:p.text-xl.mt-4 "Babashka-conf returns! Like last time in Berlin 2023, it will not only be about showcasing the latest advancements and use cases of Babashka, but also about adjacent technologies and celebrating the community that has formed around babashka."]
-   [:p.text-xl.mt-4 "Make sure to get your ticket at "[:a {:href "https://www.meetup.com/the-dutch-clojure-meetup/events/312079164/"} "meetup.com"] "while they are still available."]
-   [:p.text-xl.mt-4 "Keep an eye on this website as it will up be updated mid January when the CFP starts."]
-   [:p.text-xl.mt-4 "In case of questions, you can reach at " [:a {:href "mailto:babashka.conf@gmail.com"} "babashka.conf@gmail.com."] "or join the " [:a {:href "https://app.slack.com/client/T03RZGPFR/C04VAK5U86L"} "Slack channel."]]
-   [:p.text-xl.mt-4 "We are looking for sponsors. More information about this will be posted on this website, but if you are eager to sponsor, you can already reach out to us."]
-   [:p.text-xl.mt-4 "Babashka-conf is organized the day before " [:a {:href "https://clojuredays.org/"} "Dutch Clojure Days 2026."]]])
+   [:p.text-xl.mt-4 "Welcome to the first ever conference dedicated to Babashka! It will not only be about showcasing the latest advancements and use cases of Babashka, but also about celebrating the community that has formed around it."]])
 
-#_(def announcements
+(def announcements
   [:section
    [:h2.text-4xl {:style "font-family: Forum, serif;"} "Announcements"]
    [:p.text-xl.mt-4 "We have now published " [:a.my-auto.hover:underline {:href "schedule.html"} "the schedule"] ". More details about the talks will be added soon."]
@@ -98,18 +93,18 @@
   (head
    [:main.relative.px-10.pt-24.md:px-32.md:pt-32.lg:px-80.lg:pt-60
     [:section
-     [:h2.text-6xl.text-center {:style "font-family: Forum, serif;"} "Babashka-conf returns, this time in Amsterdam NL!"]
+     [:h2.text-6xl.text-center {:style "font-family: Forum, serif;"} "1st babashka-conf in Berlin"]
      [:br]
-     [:p.text-4xl.text-center {:style "font-family: Forum, serif;"} "8th of May 2026, 13:00-17:00 with extra community organized activities before and after."]
+     [:p.text-4xl.text-center {:style "font-family: Forum, serif;"} "10th June 2023"]
      intro]
-
-    #_(hr)
-
-    #_announcements
 
     (hr)
 
-    #_[:section
+    announcements
+
+    (hr)
+
+    [:section
      [:div.text-4xl.py-6 {:style "font-family: Forum, serif;"} "Thank you very much to our Sponsors"]
      [:div.py-6 {:style "font-family: Forum, serif;"}
       [:a {:href "https://pitch.com"}
