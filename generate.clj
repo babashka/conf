@@ -101,7 +101,7 @@
     [:section
      [:h2.text-6xl.text-center {:style "font-family: Forum, serif;"} "Babashka-conf returns, this time in Amsterdam NL!"]
      [:br]
-     [:p.text-4xl.text-center {:style "font-family: Forum, serif;"} "8th of May 2026, 13:00-17:00, OBA Oosterdok, Amsterdam (OBA Congres, 6th floor)"]
+     [:p.text-4xl.text-center {:style "font-family: Forum, serif;"} "8th of May 2026, 13:00-17:00, OBA Oosterdok, Oosterdokskade 143, 1011DL Amsterdam (OBA Congres, 6th floor)"]
      intro]
 
     #_(hr)
