@@ -80,9 +80,9 @@
 (def intro
   [:div.mt-10
    [:p.text-xl.mt-4 "Babashka-conf returns! Like last time in Berlin 2023, it will not only be about showcasing the latest advancements and use cases of Babashka, but also about adjacent technologies and celebrating the community that has formed around babashka."]
-   [:p.text-xl.mt-4 "Make sure to get your ticket at "[:a {:href "https://www.meetup.com/the-dutch-clojure-meetup/events/312079164/"} "meetup.com"] "while they are still available."]
+   [:p.text-xl.mt-4 "Make sure to get your ticket at "[:a {:href "https://www.meetup.com/the-dutch-clojure-meetup/events/312079164/"} "meetup.com"] " while they are still available."]
    [:p.text-xl.mt-4 "Keep an eye on this website as it will up be updated mid January when the CFP starts."]
-   [:p.text-xl.mt-4 "In case of questions, you can reach at " [:a {:href "mailto:babashka.conf@gmail.com"} "babashka.conf@gmail.com."] "or join the " [:a {:href "https://app.slack.com/client/T03RZGPFR/C04VAK5U86L"} "Slack channel."]]
+   [:p.text-xl.mt-4 "In case of questions, you can reach us at " [:a {:href "mailto:babashka.conf@gmail.com"} "babashka.conf@gmail.com."] "or join the " [:a {:href "https://app.slack.com/client/T03RZGPFR/C04VAK5U86L"} "Slack channel."]]
    [:p.text-xl.mt-4 "We are looking for sponsors. More information about this will be posted on this website, but if you are eager to sponsor, you can already reach out to us."]
    [:p.text-xl.mt-4 "Babashka-conf is organized the day before " [:a {:href "https://clojuredays.org/"} "Dutch Clojure Days 2026."]]])
 
