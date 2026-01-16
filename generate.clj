@@ -101,8 +101,8 @@ nav {
   [:section#cfp
    [:h2 [:a {:href "#cfp"} "Call for proposals"]]
    [:p "We're open for talk proposals until end of February. Please send your proposal to " [:a {:href "mailto:babashka.conf@gmail.com"} "babashka.conf@gmail.com."]
-    " We have room for four 25 minute talks (including Q&A) or three 25 minute talks + three 10 minute lightning talks."
-    "Topics include Babashka and related topics at all skill levels (beginner-level talks are welcome as well as expert topics). We want to hear what’s exciting to you!"]
+    " In addition to the keynote, we have room for four 25 minute talks (including Q&A) or three 25 minute talks + three 10 minute lightning talks"
+    " Topics include Babashka and related topics at all skill levels (beginner-level talks are welcome as well as expert topics). We want to hear what’s exciting to you!"]
    "Looking for inspiration on writing a proposal? Check out the great "
    [:a.my-auto.hover:underline
     {:href "https://blog.cssconf.eu/2014/06/12/how-to-write-a-great-talk-proposal-for-a-tech-conference/"}
