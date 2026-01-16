@@ -2,3 +2,4 @@ Leiningen.gitignore
 .clj-kondo
 .vscode.cache
 .lsp
+.DS_Store
