@@ -31,10 +31,8 @@
     [:meta {:charset "UTF-8"}]
     [:title "babashka-conf"]
     [:meta {:name "viewport" :content "width=device-width, initial-scale=1.0"}]
-    [:link {:rel "stylesheet" :href "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"}]
+    [:link {:rel "stylesheet" :href "https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"}]
     [:link {:rel "stylesheet" :href "https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism-solarizedlight.min.css"}]
-    ;; note, upgrading to tailwind 2.2.12 breaks the layout!
-    [:link {:href "https://unpkg.com/tailwindcss@2.2.10/dist/tailwind.min.css" :rel "stylesheet"}]
     [:link {:href "https://fonts.gstatic.com" :rel "preconnect"}]
     [:link {:rel "stylesheet" :href "https://fonts.googleapis.com/css2?family=Forum&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"}]
     [:script {:src "https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js" :defer true}]
@@ -48,46 +46,50 @@
    font-size: 10pt;
    font-style: italic;
 }
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+header img {
+  margin: 0 auto 1rem;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 1rem 0;
+}
 "]]
 
-   [:header.overflow-x-hidden {:style "font-family: 'Raleway', sans-serif;"}
-    [:div.absolute {:style "width: 180vw; height: 200vh; background: linear-gradient(90deg, #B70000,rgba(227, 30, 37, 0.5) 50%, rgba(255, 255, 255, 0.1)); transform: rotateZ(-35deg) translate(-130vw, -150vh);"}]
-    [:header.w-full.shadow-md.relative.bg-white {:style "box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.05);"}
-     [:div.container.h-auto.mx-auto.grid.grid-cols-1.py-6.lg:grid-flow-col.lg:auto-cols-max
-      [:h1.text-lg.mb-5.mx-auto.lg:mx-0.lg:mb-auto.col-end-auto
-       [:a {:href "index.html"}
-        [:img {:src "./assets/babashka.svg"
-               :alt "Babashka Logo"
-               :width "200px"}]]]
-
-      [:nav.flex.flex-row.flex-nowrap.mb-5.lg:mb-0.mx-auto
-       [:a.my-auto.mx-2.sm:mx-5.hover:underline {:href "https://www.meetup.com/the-dutch-clojure-meetup/events/312079164"} "Tickets"]]
-      #_[:nav.flex.flex-row.flex-nowrap.mb-5.lg:mb-0.mx-auto
-       [:a.my-auto.mx-2.sm:mx-5.hover:underline {:href "schedule.html"} "Schedule"]]
-      [:nav.flex.flex-row.flex-nowrap.mb-5.lg:mb-0.mx-auto
-       [:a.my-auto.mx-2.sm:mx-5.hover:underline {:href "https://www.etsy.com/listing/1475981599/babashka-conf-berlin-2023-t-shirt"} "T-shirt"]]
-      [:nav.flex.flex-row.flex-nowrap.mb-5.lg:mb-0.mx-auto
-       [:a.my-auto.mx-2.sm:mx-5.hover:underline {:href "https://maps.app.goo.gl/xqVZA57sfqHiXkb87"} "Venue"]]
-
-      [:nav.flex.flex-row.flex-nowrap.mx-auto
-       [:a.my-auto.mx-5 {:href "https://app.slack.com/client/T03RZGPFR/C04VAK5U86L"}
-        [:img {:src "./assets/slack.svg"
-               :width "33x"}]]
-       #_[:a.my-auto.mx-5 {:href "https://twitter.com/search?q=%23babashka%20OR%20babashka&src=typed_query&f=live"}
-        [:img {:src "./assets/twitter.svg"}]]]]]]
+   [:header
+    [:a {:href "index.html"}
+     [:img {:src "./assets/babashka.svg"
+            :alt "Babashka Logo"
+            :width "200px"}]]
+    [:nav
+     [:a {:href "https://www.meetup.com/the-dutch-clojure-meetup/events/312079164"} "Tickets"]
+     #_[:a {:href "schedule.html"} "Schedule"]
+     [:a {:href "https://www.etsy.com/listing/1475981599/babashka-conf-berlin-2023-t-shirt"} "T-shirt"]
+     [:a {:href "https://maps.app.goo.gl/xqVZA57sfqHiXkb87"} "Venue"]
+     [:a {:href "https://app.slack.com/client/T03RZGPFR/C04VAK5U86L"} "Slack"]]]
    content])
 
 (def intro
-  [:div.mt-10
-   [:p.text-xl.mt-4 "Babashka-conf returns! Like last time in Berlin 2023, it will not only be about showcasing the latest advancements and use cases of Babashka, but also about adjacent technologies and celebrating the community that has formed around babashka."]
-   [:p.text-xl.mt-4 "Make sure to get your ticket at "[:a {:href "https://www.meetup.com/the-dutch-clojure-meetup/events/312079164/"} "meetup.com"] " while they are still available."]
-   [:p.text-xl.mt-4 "Babashka-conf is organized the day before " [:a {:href "https://clojuredays.org/"} "Dutch Clojure Days 2026"] " so you can have two days of Clojure fun in and around Amsterdam!"]
-   [:p.text-xl.mt-4 "Keep an eye on this website as it will up be updated in the coming months. CfP starts mid January when the CfP of DCD26 closes."]
-   [:p.text-xl.mt-4 "In case of questions, you can reach us at " [:a {:href "mailto:babashka.conf@gmail.com"} "babashka.conf@gmail.com."] " and in the " [:a {:href "https://app.slack.com/client/T03RZGPFR/C04VAK5U86L"} "#babashka-conf Slack channel."]]
-   [:p.text-xl.mt-4 "We are looking for sponsors. More information about this will be posted on this website, but if you are eager to sponsor, you can already reach out to us."]
-   [:p.text-xl.mt-4 "You can expect some community-organized activities before and after the conference, information about this will be posted in the Slack channel."]])
+  [:div
+   [:section
+    [:div.mt-10
+     [:h2.text-4xl {:style "font-family: Forum, serif;"} "Babashka conf returns"]
+     [:p.text-xl.mt-4 "Babaxshka-conf returns! Like last time in Berlin 2023, it will not only be about showcasing the latest advancements and use cases of Babashka, but also about adjacent technologies and celebrating the community that has formed around babashka."]
+     [:p.text-xl.mt-4 "Make sure to get your ticket at "[:a {:href "https://www.meetup.com/the-dutch-clojure-meetup/events/312079164/"} "meetup.com"] " while they are still available."]]]
+   [:section
+    [:p.text-xl.mt-4 "Babashka-conf is organized the day before " [:a {:href "https://clojuredays.org/"} "Dutch Clojure Days 2026"] " so you can have two days of Clojure fun in and around Amsterdam!"]
+    [:p.text-xl.mt-4 "Keep an eye on this website as it will up be updated in the coming months. CfP starts mid January when the CfP of DCD26 closes."]
+    [:p.text-xl.mt-4 "In case of questions, you can reach us at " [:a {:href "mailto:babashka.conf@gmail.com"} "babashka.conf@gmail.com."] " and in the " [:a {:href "https://app.slack.com/client/T03RZGPFR/C04VAK5U86L"} "#babashka-conf Slack channel."]]
+    [:p.text-xl.mt-4 "We are looking for sponsors. More information about this will be posted on this website, but if you are eager to sponsor, you can already reach out to us."]
+    [:p.text-xl.mt-4 "You can expect some community-organized activities before and after the conference, information about this will be posted in the Slack channel."]]])
 
-#_(def announcements
+(def announcements
   [:section
    [:h2.text-4xl {:style "font-family: Forum, serif;"} "Announcements"]
    [:p.text-xl.mt-4 "We have now published " [:a.my-auto.hover:underline {:href "schedule.html"} "the schedule"] ". More details about the talks will be added soon."]
@@ -106,25 +108,27 @@
 
     #_(hr)
 
-    #_announcements
+    announcements
 
     (hr)
 
-    #_[:section
-     [:div.text-4xl.py-6 {:style "font-family: Forum, serif;"} "Thank you very much to our Sponsors"]
+    [:section
+     [:div.text-4xl.py-6 {:style "font-family: Forum, serif;"} "Thank you very much to our Platinum Sponsors"]
      [:div.py-6 {:style "font-family: Forum, serif;"}
-      [:a {:href "https://pitch.com"}
-       [:span.hidden "Pitch"]
-       [:svg.object-none.w-48 {:fill "currentColor" :viewBox "0 0 66 23"}
-        [:path {:d "M44.87 17.272a4.318 4.318 0 11.04-4.877l3.191-1.884a8.019 8.019 0 10-.017 8.613l-3.213-1.852zM53.662 0H49.96v22.206h3.7v-7.402a4.318 4.318 0 118.636 0v7.402h3.701v-8.122a7.3 7.3 0 00-12.336-5.282V0zM27.756 0h-3.701v17.271a5.551 5.551 0 009.201 4.183l-1.788-3.034a1.847 1.847 0 01-1.45.701h-.412a1.851 1.851 0 01-1.85-1.85v-6.168h3.7V7.402h-3.7V0zM19.74 0a2.056 2.056 0 100 4.112 2.056 2.056 0 000-4.112zM21.59 22.206V7.402h-3.7v14.804h3.7z" :fill "currentColor"}]
-        [:path {:clip-rule "evenodd" :d "M0 22.206h3.7v-4.318h3.393A8.944 8.944 0 107.093 0H0v22.206zM3.7 3.7h3.393a5.243 5.243 0 010 10.486H3.701V3.7z" :fill-rule "evenodd" :fill "currentColor"}]]]]
+      [:a {:href "https://exoscale.com"}
+       [:img {:src "./assets/exoscale-logo.png" :alt "Exoscale"
+              :width "300px"}]]]
      [:div.py-6 {:style "font-family: Forum, serif;"}
+      [:a {:href "https://github.com/bobisageek"}
+       [:img {:src "./assets/bob.png" :alt "Bob"
+              :width "300px"}]]]
+     #_[:div.py-6 {:style "font-family: Forum, serif;"}
       [:a {:href "https://doctronic.de/"}
        [:img.w-96 {:style "transform-origin: top left; transform: scale(1.3);" :src "./assets/doctronic-logo.png" :alt "doctronic"}]]]
-     [:div.py-6 {:style "font-family: Forum, serif;"}
+     #_[:div.py-6 {:style "font-family: Forum, serif;"}
       [:a {:href "https://www.scarletcomply.com/"}
        [:img {:style "transform-origin: top left; transform: scale(2.3);" :src "./assets/scarlet_logo.svg" :alt "scarlet comply"}]]]
-     [:div.py-6 {:style "font-family: Forum, serif;"}
+     #_[:div.py-6 {:style "font-family: Forum, serif;"}
       [:a {:href "https://www.juxt.pro/"}
        [:img {:style "transform-origin: top left; transform: scale(0.4);" :src "./assets/juxt-logo.svg" :alt "JUXT Ltd"}]]]]
 
