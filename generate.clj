@@ -63,6 +63,24 @@ nav {
   gap: 1.5rem;
   margin: 1rem 0;
 }
+.sponsors-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+.sponsor-item {
+  text-align: center;
+}
+.sponsor-item img {
+  height: auto;
+  width: auto;
+}
+.sponsor-item p, .sponsor-item a {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
 "]]
 
    [:header
@@ -91,6 +109,7 @@ nav {
 (def announcements
   [:section#announcements
    [:h2 [:a {:href "#announcements"} "Announcements"]]
+   [:h3 "2026-02-08: " [:a {:href "https://nubank.com.br"} "Nubank"] " joined as a Platinum " [:a {:href "#sponsors"} "sponsor"]]
    [:h3 "2026-01-16: " [:a {:href "#cfp"} "CfP"] " and " [:a {:href "#cfv"} "CfV"] " open"]
    [:h3 "2026-01-16: Babashka conf has two Platinum (EU 500)" [:a {:href "#sponsors"} " sponsors"] ": Exoscale and Bob"]
    [:h3 "2025-01-16: Keynote speaker announced: David Nolen"]
@@ -158,14 +177,20 @@ nav {
 
     [:section#sponsors
      [:h3  [:a {:href "#sponsors"} "Thank you very much to our Platinum Sponsors"]]
-     [:div
-      [:a {:href "https://exoscale.com"}
-       [:img {:src "./assets/exoscale-logo.png" :alt "Exoscale"
-              :width "300px"}]]]
-     [:div
-      [:a {:href "https://github.com/bobisageek"}
-       [:img {:src "./assets/bob.png" :alt "Bob"
-              :width "300px"}]]]]]))
+     [:div.sponsors-grid
+      [:div.sponsor-item
+       [:div {:style "background-color: #1a1f3a; border-radius: 4px; padding: 0.75rem 1.5rem; display: inline-block;"}
+        [:a {:href "https://nubank.com.br"}
+         [:img {:src "./assets/03_nulogo_white.png" :alt "Nubank" :style "height: 120px; width: auto;"}]]]
+       [:div [:a {:href "https://international.nubank.com.br/careers/"} "Nubank is hiring!"]]]
+      [:div.sponsor-item
+       [:a {:href "https://exoscale.com"}
+        [:img {:src "./assets/exoscale-logo.png" :alt "Exoscale" :style "height: 120px; width: auto;"}]]
+       [:div [:a {:href "https://www.exoscale.com/jobs/"} "Exoscale is hiring!"]]]
+      [:div.sponsor-item
+       [:a {:href "https://github.com/bobisageek"}
+        [:img {:src "./assets/bob.png" :alt "Bob" :style "height: 120px; width: auto;"}]]
+       [:div "Thank you Bob for your generous contribution on behalf of the Clojure community!"]]]]]))
 
 (defn abstract [txt]
   [:details
