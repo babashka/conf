@@ -3,3 +3,4 @@ Leiningen.gitignore
 .vscode.cache
 .lsp
 .DS_Store
+.claude
