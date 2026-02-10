@@ -179,7 +179,7 @@ nav {
      [:h3  [:a {:href "#sponsors"} "Thank you very much to our Platinum Sponsors"]]
      [:div.sponsors-grid
       [:div.sponsor-item
-       [:div {:style "background-color: #1a1f3a; border-radius: 4px; padding: 0.75rem 1.5rem; display: inline-block;"}
+       [:div {:style "background-color: navy; border-radius: 4px; padding: 0.75rem 1.5rem; display: inline-block;"}
         [:a {:href "https://www.nu.co/2026-en"}
          [:img {:src "./assets/03_nulogo_white.png" :alt "Nubank" :style "height: 120px; width: auto;"}]]]
        [:div [:a {:href "https://international.nubank.com.br/careers/"} "Nubank is hiring!"]]]
