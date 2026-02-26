@@ -109,6 +109,8 @@ nav {
 (def announcements
   [:section#announcements
    [:h2 [:a {:href "#announcements"} "Announcements"]]
+   [:h3 "2026-02-26: Wendy Randolph will be our event host / MC / speaker liaison!"]
+   [:p [:a {:href "https://www.linkedin.com/in/wendy-randolph/"} "Wendy Randolph"] " will be joining us all the way from the US to be our event host, MC, and speaker liaison. Wendy is a functional developer passionate about building great software and growing developer communities. Welcome Wendy!"]
    [:h3 "2026-02-08: " [:a {:href "https://nubank.com.br"} "Nubank"] " joined as a Platinum " [:a {:href "#sponsors"} "sponsor"]]
    [:h3 "2026-01-16: " [:a {:href "#cfp"} "CfP"] " and " [:a {:href "#cfv"} "CfV"] " open"]
    [:h3 "2026-01-16: Babashka conf has two Platinum (EU 500)" [:a {:href "#sponsors"} " sponsors"] ": Exoscale and Bob"]
