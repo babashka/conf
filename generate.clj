@@ -200,7 +200,7 @@ nav {
       [:div.sponsor-item
        [:a {:href "https://itonomi.com"}
         [:picture
-         [:source {:srcset "./assets/itonomi logo - v5 - dark.svg" :media "(prefers-color-scheme: dark)"}]
+         [:source {:srcset "./assets/itonomi%20logo%20-%20v5%20-%20dark.svg" :media "(prefers-color-scheme: dark)"}]
          [:img {:src "./assets/itonomi logo - v5 - light.svg" :alt "Itonomi" :style "height: 90px; width: auto; margin-bottom: 1.5rem;"}]]]]]]]))
 
 (defn abstract [txt]
