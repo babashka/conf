@@ -109,6 +109,7 @@ nav {
 (def announcements
   [:section#announcements
    [:h2 [:a {:href "#announcements"} "Announcements"]]
+   [:h3 "2026-02-27: " [:a {:href "https://itonomi.com"} "Itonomi"] " joined as a Gold " [:a {:href "#sponsors"} "sponsor"]]
    [:h3 "2026-02-26: Wendy Randolph will be our event host / MC / speaker liaison!"]
    [:p [:a {:href "https://www.linkedin.com/in/wendy-randolph/"} "Wendy Randolph"] " will be joining us all the way from the US to be our event host, MC, and speaker liaison. Wendy is a functional developer passionate about building great software and growing developer communities. Welcome Wendy!"]
    [:h3 "2026-02-08: " [:a {:href "https://nubank.com.br"} "Nubank"] " joined as a Platinum " [:a {:href "#sponsors"} "sponsor"]]
@@ -178,7 +179,7 @@ nav {
     (hr)
 
     [:section#sponsors
-     [:h3  [:a {:href "#sponsors"} "Thank you very much to our Platinum Sponsors"]]
+     [:h3  [:a {:href "#sponsors"} "Platinum Sponsors"]]
      [:div.sponsors-grid
       [:div.sponsor-item
        [:div {:style "border-radius: 4px; padding: 0.75rem 1.5rem; display: inline-block;"}
@@ -192,7 +193,15 @@ nav {
       [:div.sponsor-item
        [:a {:href "https://github.com/bobisageek"}
         [:img {:src "./assets/bob.png" :alt "Bob" :style "height: 120px; width: auto;"}]]
-       [:div "Thank you Bob for your generous contribution on behalf of the Clojure community!"]]]]]))
+       [:div "Thank you Bob for your generous contribution on behalf of the Clojure community!"]]]
+
+     [:h3 [:a {:href "#sponsors"} "Gold Sponsors"]]
+     [:div.sponsors-grid
+      [:div.sponsor-item
+       [:a {:href "https://itonomi.com"}
+        [:picture
+         [:source {:srcset "./assets/itonomi logo - v5 - dark.svg" :media "(prefers-color-scheme: dark)"}]
+         [:img {:src "./assets/itonomi logo - v5 - light.svg" :alt "Itonomi" :style "height: 90px; width: auto; margin-bottom: 1.5rem;"}]]]]]]]))
 
 (defn abstract [txt]
   [:details
