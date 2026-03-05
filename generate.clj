@@ -161,8 +161,8 @@ nav {
 (defn talk-details [abstract-txt bio-txt]
   [:details {:style "background: none; padding: 0; margin: 0;"}
    [:summary {:style "background: none; font-size: 0.85em; opacity: 0.6;"} "Details"]
-   [:p.abstract [:b "Abstract: "] abstract-txt]
-   [:p.bio [:b "Bio: "] bio-txt]])
+   (when abstract-txt [:p.abstract [:b "Abstract: "] abstract-txt])
+   (when bio-txt [:p.bio [:b "Bio: "] bio-txt])])
 
 (defn index
   [_]
@@ -210,7 +210,10 @@ nav {
       (talk-details
        "Josh uses Rich Hickey's greatest hits as an analytical framework to argue that LLM coding tools run counter to the core principles not only of the Clojure programming language itself but also to the values the community espouses. Drawing on \"Simple Made Easy\", \"Hammock Driven Development\", and Rich's own thoughts on AI, this talk explores how LLMs are complexity embodied and how they undermine the practice of deep thinking and mastery that makes great programmers."
        "Josh Glover is a longtime Clojure enthusiast, conference and meetup group speaker, fervent blogger, and co-host of the irreverent, rambling, but somehow popular defn podcast. He is best known in Babashka circles as a minor irritant in the Borkiverse on Clojurians Slack, contributor of horrifying hacks to quickblog, and creator of the shovelware Blambda runtime for AWS Lambda.")]
-     [:p [:b "16:15"] " Keynote: More with Less (25 min)" [:br]  [:span "David Nolen"]]
+     [:p [:b "16:15"] " Keynote: More with Less (25 min)" [:br]  [:span "David Nolen"]
+      (talk-details
+       nil
+       "David Nolen is the lead developer of ClojureScript.")]
      [:p [:b "16:40"] " Closing notes" [:br]  [:span "Michiel Borkent"]]
      [:p [:b "16:55"] " End"]]
 
