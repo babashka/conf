@@ -80,9 +80,11 @@ nav {
 
    [:header
     [:a {:href "index.html"}
-     [:img {:src "./assets/babashka.svg"
-            :alt "Babashka Logo"
-            :width "200px"}]]
+     [:picture
+      [:source {:srcset "./assets/babashka-dark.svg" :media "(prefers-color-scheme: dark)"}]
+      [:img {:src "./assets/babashka.svg"
+             :alt "Babashka Logo"
+             :width "200px"}]]]
     [:nav
      [:a {:href "https://www.meetup.com/the-dutch-clojure-meetup/events/312079164"} "Tickets"]
      [:a {:href "#schedule"} "Schedule"]
@@ -104,6 +106,7 @@ nav {
 (def announcements
   [:section#announcements
    [:h2 [:a {:href "#announcements"} "Announcements"]]
+   [:h3 "2026-03-10: " [:a {:href "https://flexiana.com"} "Flexiana"] " joined as a Platinum " [:a {:href "#sponsors"} "sponsor"]]
    [:h3 "2026-03-05: The " [:a {:href "#schedule"} "schedule"] " is now live!"]
    [:h3 "2026-02-27: " [:a {:href "https://itonomi.com"} "Itonomi"] " joined as a Gold " [:a {:href "#sponsors"} "sponsor"]]
    [:h3 "2026-02-26: Wendy Randolph will be our event host / MC / speaker liaison!"]
@@ -231,6 +234,11 @@ nav {
        [:a {:href "https://exoscale.com"}
         [:img {:src "./assets/exoscale-logo.png" :alt "Exoscale" :style "height: 120px; width: auto;"}]]
        [:div [:a {:href "https://www.exoscale.com/jobs/"} "Exoscale is hiring!"]]]
+      [:div.sponsor-item
+       [:a {:href "https://flexiana.com"}
+        [:picture
+         [:source {:srcset "./assets/logo_flexiana-white%20(1).png" :media "(prefers-color-scheme: dark)"}]
+         [:img {:src "./assets/logo_flexiana_gold.svg (1).png" :alt "Flexiana" :style "height: 70px; width: auto;"}]]]]
       [:div.sponsor-item
        [:a {:href "https://github.com/bobisageek"}
         [:img {:src "./assets/bob.png" :alt "Bob" :style "height: 120px; width: auto;"}]]
