@@ -88,7 +88,7 @@ nav {
     [:nav
      [:a {:href "https://www.meetup.com/the-dutch-clojure-meetup/events/312079164"} "Tickets"]
      [:a {:href "#schedule"} "Schedule"]
-     [:a {:href "https://www.etsy.com/listing/1475981599/babashka-conf-berlin-2023-t-shirt"} "T-shirt"]
+     [:a {:href "https://www.etsy.com/listing/4469624707/babashka-conf-amsterdam-2026"} "T-shirt"]
      [:a {:href "https://maps.app.goo.gl/xqVZA57sfqHiXkb87"} "Venue"]
      [:a {:href "https://app.slack.com/client/T03RZGPFR/C04VAK5U86L"} "Slack"]]]
    content])
