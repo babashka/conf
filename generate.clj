@@ -218,7 +218,8 @@ nav {
        nil
        "David Nolen is the lead developer of ClojureScript.")]
      [:p [:b "16:40"] " Closing notes" [:br]  [:span "Michiel Borkent"]]
-     [:p [:b "16:55"] " End"]]
+     [:p [:b "16:55"] " End"]
+     [:p [:b "17:00"] " Drinks at the bar (on your own tab)"]]
 
     (hr)
 
