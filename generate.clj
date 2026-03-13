@@ -90,7 +90,8 @@ nav {
      [:a {:href "#schedule"} "Schedule"]
      [:a {:href "https://www.etsy.com/listing/4469624707/babashka-conf-amsterdam-2026"} "T-shirt"]
      [:a {:href "https://maps.app.goo.gl/xqVZA57sfqHiXkb87"} "Venue"]
-     [:a {:href "https://app.slack.com/client/T03RZGPFR/C04VAK5U86L"} "Slack"]]]
+     [:a {:href "https://app.slack.com/client/T03RZGPFR/C04VAK5U86L"} "Slack"]
+     [:a {:href "https://en-us.confcodeofconduct.com/"} "Code of Conduct"]]]
    content])
 
 (def intro
