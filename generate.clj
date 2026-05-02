@@ -173,7 +173,7 @@ nav {
    [:main
     [:section
      [:h2 "Babashka-conf returns, this time in Amsterdam NL!"]
-     [:p "8th of May 2026 13:00-17:00" [:br]
+     [:p "8th of May 2026 13:00-18:00" [:br]
       "OBA Oosterdok" [:br]
       "Oosterdokskade 143, 1011 DL Amsterdam" [:br]
       "6th floor, room \"Forumzaal\""]
