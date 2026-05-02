@@ -101,7 +101,6 @@ nav {
    [:p "Make sure to get your ticket at "[:a {:href "https://www.meetup.com/the-dutch-clojure-meetup/events/312079164/"} "meetup.com"] " while they are still available."]
    [:p "Babashka-conf is organized the day before " [:a {:href "https://clojuredays.org/"} "Dutch Clojure Days 2026"] " so you can have two days of Clojure fun in and around Amsterdam!"]
    [:p "In case of questions, you can reach us at " [:a {:href "mailto:babashka.conf@gmail.com"} "babashka.conf@gmail.com."] " and in the " [:a {:href "https://app.slack.com/client/T03RZGPFR/C04VAK5U86L"} "#babashka-conf Slack channel."]]
-   [:p "We are looking for sponsors. More information about this will be posted on this website, but if you are eager to sponsor, you can already reach out to us."]
    [:p "You can expect some community-organized activities before and after the conference, information about this will be posted in the Slack channel."]])
 
 (def announcements
@@ -176,7 +175,8 @@ nav {
      [:h2 "Babashka-conf returns, this time in Amsterdam NL!"]
      [:p "8th of May 2026 13:00-17:00" [:br]
       "OBA Oosterdok" [:br]
-      "Amsterdam"#_"Oosterdokskade 143, 1011DL Amsterdam (OBA Congres, 6th floor)"]
+      "Oosterdokskade 143, 1011 DL Amsterdam" [:br]
+      "6th floor, room \"Forumzaal\""]
      intro]
     announcements
     #_cfp
@@ -187,8 +187,8 @@ nav {
     [:section#schedule
      [:h2 [:a {:href "#schedule"} "Schedule"]]
      [:h3 "Friday, 8th May 2026"]
-     [:p [:b "13:00"] " Doors open, coffee in the hall"]
-     [:p [:b "13:30"] " Welcome" [:br]  [:span "Michiel Borkent"]]
+     [:p [:b "13:00"] " Registration and coffee on the 6th floor. Pick up your name tag (printed from your meetup name)."]
+     [:p [:b "13:30"] " Doors close, talks start sharp. Welcome" [:br]  [:span "Michiel Borkent"]]
      [:p [:b "13:45"] " Scripting with SCI on your iPhone (25 min)" [:br]  [:span "Adrian Smith"]
       (talk-details
        "Learn how to build an iPhone app using your favorite editor by jacking into an nrepl server running on your phone. Graalvm's native image can produce native binaries for a variety of different platforms, including your iPhone. Mobile development is not known for REPL driven development, but with the power of SCI, live coding on your phone is easy and fun."
@@ -205,7 +205,7 @@ nav {
       (talk-details
        "There is no denying the love for Clojure that we all have, but sometimes we need to step out of Shangri-La onto the muddy waters. This talk focuses on Go as tool that is not only ubiquitous in a lot of places but becoming harder to avoid in certain places, specially infra. Being one of the contributors of Babashka, Go also finds a great use in the bb pod ecosystem. This is about looking at Go, how to appreciate it from the lens of a Clojure programmer, make peace with it, see use cases where its a great asset to us Clojure devs and be more effective in a pragmatic way. How to make use of it in your own tasks and augment the Clojure experience and a sneak peek into Babashka pods."
        "Rahul is primarily an SRE dedicated to making simpler tools to bridge the gap between Dev and Ops. As a die hard Clojure fan, he is fascinated to use its power and simplicity to make infra simple too; a place where it is rarely seen but can be of immense value. He is one of the maintainers of the Babashka project. Mostly based in London, UK, he loves to organise and attend meetups and conferences around increasing diversity in tech, functional programming and food.")]
-     [:p [:b "15:00"] " Break (30 min)"]
+     [:p [:b "15:00"] " Break (30 min). Snacks served (vegan, nut free). No food in the room: please eat outside on the 6th floor."]
      [:p [:b "15:30"] " Flower, a static site generator with a clojure template language (25 min)" [:br]  [:span "Jynn Nelson"]
       (talk-details
        "One of clojure's principles is to make code extensible and decoupled. Flower is an experiment to see how far that can be taken at the application level. It has a configuration and build system based on executing (constrained) clojure programs; a dataflow system based on running clojure functions; a template language based on inline clojure; and an extension mechanism for replacing all those hooks with another programming language of your choice. Flower aims to unify users and programmers, by giving each site author full control over their own site. Flower also explores how self-contained applications can offer the features expected from a programming language, such as REPLs, backtraces, println debugging, and more. This talk explores what Flower does, how it works, and how others can design tools like it. It dives into Clojure's evaluation model, SCI and Graal native binaries, and programming language design."
@@ -220,7 +220,7 @@ nav {
        "David Nolen is the lead developer of ClojureScript.")]
      [:p [:b "16:40"] " Closing notes" [:br]  [:span "Michiel Borkent"]]
      [:p [:b "16:55"] " End"]
-     [:p [:b "17:00"] " Drinks at the bar (on your own tab)"]]
+     [:p [:b "17:00-18:00"] " Drinks on the 6th floor (alcoholic and non-alcoholic, self-paid)"]]
 
     (hr)
 
