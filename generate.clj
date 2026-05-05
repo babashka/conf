@@ -189,7 +189,7 @@ nav {
      [:h2 [:a {:href "#travel"} "Travel tips"]]
      [:h3 "Getting around Amsterdam and Weesp"]
      [:p "Use " [:a {:href "https://9292.nl/en"} "9292.nl"] " to plan your trip. You can tap your contactless bank card or credit card (Mastercard, VISA, VPay, etc.) to enter public transport (train, bus, tram). Use the same card to get out. Much cheaper than a taxi."]
-     [:p "Good train connections to and from Schiphol airport are also available."]]
+     [:p "Good train connections to and from Schiphol Airport are also available."]]
 
     (hr)
 
