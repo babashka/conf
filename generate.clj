@@ -90,6 +90,7 @@ nav {
      [:a {:href "#schedule"} "Schedule"]
      [:a {:href "https://www.etsy.com/listing/4469624707/babashka-conf-amsterdam-2026"} "T-shirt"]
      [:a {:href "https://maps.app.goo.gl/xqVZA57sfqHiXkb87"} "Venue"]
+     [:a {:href "#travel"} "Travel"]
      [:a {:href "https://app.slack.com/client/T03RZGPFR/C04VAK5U86L"} "Slack"]
      [:a {:href "https://en-us.confcodeofconduct.com/"} "Code of Conduct"]]]
    content])
@@ -181,6 +182,13 @@ nav {
     announcements
     #_cfp
     #_cfv
+
+    (hr)
+
+    [:section#travel
+     [:h2 [:a {:href "#travel"} "Travel tips"]]
+     [:h3 "Getting around Amsterdam and Weesp"]
+     [:p "Use " [:a {:href "https://9292ov.nl"} "9292ov.nl"] " to plan your trip. You can tap your contactless bank card or credit card (Mastercard, VISA, VPay, etc.) to enter public transport (train, bus, tram). Use the same card to get out. Much cheaper than a taxi."]]
 
     (hr)
 
